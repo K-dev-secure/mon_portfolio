@@ -1,0 +1,139 @@
+/* DA MK ASSURANCE : Ambiance Tech, Pro et Moderne */
+
+body {
+  background: #0a1016;
+  color: #eaf6fb;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
+}
+
+/* --- TITRE PRINCIPAL --- */
+.titre_projet {
+  padding: 100px 20px 50px 20px;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, rgba(0,212,255,0.1) 0%, rgba(10,16,22,1) 100%);
+  border-bottom: 1px solid #00d4ff33;
+  box-shadow: 0 4px 20px 0 rgba(0,212,255,0.05);
+  text-align: center;
+}
+
+.titre_projet h1 {
+  color: #00d4ff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* --- SOUS-TITRES (H2) --- */
+h2 {
+  color: #00d4ff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 850px;
+  margin: 50px auto 20px auto;
+  padding-left: 15px;
+  border-left: 4px solid #00d4ff;
+}
+
+/* --- TEXTE ET PARAGRAPHES --- */
+p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 212, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+strong {
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+/* --- SECTION IMAGES (Flyers & Charte) --- */
+.img_projet {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.img_projet p {
+  width: 100%;
+  max-width: 400px; /* Deux images par ligne sur grand écran */
+  height: 250px; /* Taille fixe pour les placeholders */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 212, 255, 0.05);
+  border: 2px dashed rgba(0, 212, 255, 0.3);
+  color: #00d4ff;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Si tu remplaces les <p> par des <img> plus tard : */
+.img_projet img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.img_projet img:hover {
+  transform: translateY(-5px);
+  border-color: #00d4ff;
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+}
+
+/* --- BOUTONS ET LIENS (GitHub & Site) --- */
+.liens_code {
+  max-width: 850px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 212, 255, 0.07);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.liens_code a {
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 25px;
+  color: #0a1016;
+  background: #00d4ff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.liens_code a:hover {
+  background: #eaf6fb;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .titre_projet h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.2rem; margin: 40px 20px 15px 20px; }
+  p { font-size: 0.95rem; margin: 15px 20px; padding: 15px; }
+  .img_projet p { max-width: 100%; height: 200px; }
+  .liens_code a { display: block; margin: 10px 20px; }
+}

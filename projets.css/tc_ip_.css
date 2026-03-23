@@ -1,0 +1,130 @@
+/* DA Réseaux & Systèmes : Identité visuelle cohérente et pro */
+
+body {
+  background: #0a1016;
+  color: #eaf6fb;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+}
+
+/* --- TITRE PRINCIPAL --- */
+.titre_projet {
+  padding: 100px 20px 60px 20px;
+  margin-bottom: 40px;
+  background: linear-gradient(180deg, rgba(0,212,255,0.12) 0%, rgba(10,16,22,1) 100%);
+  border-bottom: 1px solid #00d4ff44;
+  text-align: center;
+}
+
+.titre_projet h1 {
+  color: #00d4ff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+h2 {
+  color: #00d4ff;
+  font-size: 1.6rem;
+  max-width: 850px;
+  margin: 50px auto 20px auto;
+  padding-left: 20px;
+  border-left: 5px solid #00d4ff;
+}
+
+p, ul {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 15px 25px;
+  background: rgba(0, 212, 255, 0.02);
+  border: 1px solid rgba(0, 212, 255, 0.08);
+  border-radius: 10px;
+}
+
+li {
+  margin-bottom: 12px;
+  list-style-type: "→ ";
+  color: #eaf6fb;
+}
+
+strong {
+  color: #00d4ff;
+}
+
+.img_projet {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.img_projet img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 212, 255, 0.2);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.img_projet img:hover {
+  transform: scale(1.02);
+  border-color: #00d4ff;
+}
+
+.img_projet p {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px dashed #00d4ff55;
+  color: #00d4ff;
+  font-style: italic;
+  padding: 40px;
+}
+
+/* --- BOUTON DE TÉLÉCHARGEMENT (.PKT) --- */
+.liens_code {
+  max-width: 850px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 40px;
+  background: rgba(0, 212, 255, 0.05);
+  border: 2px solid rgba(0, 212, 255, 0.2);
+  border-radius: 20px;
+}
+
+.liens_code h3 {
+  color: #00d4ff;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+}
+
+.liens_code a {
+  display: inline-block;
+  background: #00d4ff;
+  color: #0a1016;
+  padding: 18px 35px;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 50px; /* Style bouton arrondi "pilule" */
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.liens_code a:hover {
+  background: #eaf6fb;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .titre_projet h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.3rem; margin-left: 20px; margin-right: 20px; }
+  p, ul { margin: 15px 20px; font-size: 0.95rem; }
+  .liens_code a { width: 80%; padding: 15px; }
+}

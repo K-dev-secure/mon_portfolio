@@ -1,0 +1,141 @@
+.mes_projets {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.mes_projets span {
+    color: #00d4ff;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+.mes_projets h2 {
+    font-size: 40px;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.mes_projets h3 {
+    color: #00d4ff;
+    font-size: 32px;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    margin: 42px 0 22px;
+    padding: 30px;
+}
+
+.mes_projets > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 26px;
+}
+
+.first_card,
+.second_card,
+.third_card {
+    background: rgba(0, 0, 0, 0.72);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.first_card:hover,
+.second_card:hover,
+.third_card:hover {
+    border: 3px solid rgba(0, 255, 300, 0.55);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.35);
+    border-color: #00d4ff;
+}
+
+.first_card img,
+.second_card img,
+.third_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.3);
+}
+
+
+
+.first_card:hover img,
+.second_card:hover img,
+.third_card:hover img {
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+}
+
+
+.first_card > div,
+.second_card > div,
+.third_card > div {
+    padding: 10px;
+}
+
+.first_card h4,
+.second_card h4,
+.third_card h4 {
+    font-size: 20px;
+    margin: 0 0 12px;
+    padding: 15px 0;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    color: #00d4ff;
+}
+
+.first_card p,
+.second_card p,
+.third_card p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    color: #e8f4ff;
+    padding: 0 0 25px;
+}
+
+.outils_utilisés {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px;
+    gap: 10px;
+   
+}
+
+.outils_utilisés p {
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    background-color: rgba(0, 212, 255, 0.1);
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: 4px;
+    font-size: 14px;
+    color: #00d4ff;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 900px) {
+    .mes_projets > div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .first_card,
+    .second_card,
+    .third_card {
+        max-width: none;
+    }
+    .first_card > div,
+    .second_card > div,
+    .third_card > div {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,112 @@
+/* --- Style Spécifique Projet Linux Automation --- */
+
+/* Conteneur principal pour le texte */
+p {
+  max-width: 900px;
+  margin: 25px auto;
+  line-height: 1.8;
+  color: #ccd6f6;
+  font-size: 1.05rem;
+}
+
+/* Mise en avant des commandes techniques dans le texte */
+strong, em {
+  color: #00d4ff; /* Ton bleu cyan */
+  font-family: 'Fira Code', monospace;
+  font-style: normal;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* --- Section Titres --- */
+h2 {
+  max-width: 900px;
+  margin: 50px auto 20px auto;
+  color: #00d4ff;
+  font-family: 'Fira Code', monospace;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+/* --- Cadres pour les captures d'écran (Terminal/Nano) --- */
+.img_projet {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 40px 0 40px 50%;
+  transform: translateX(-50%);
+  background: #111b27; /* Fond type console */
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Petit effet "Fenêtre de termsainal" (les 3 points rouge/jaune/vert) */
+.img_projet::before {
+  content: "● ● ●";
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #ff5f56; /* Rouge (les autres via text-shadow ou juste texte simple) */
+}
+
+.img_projet p {
+  margin-top: 20px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  color: #00ff41;
+  text-align: center;
+}
+
+/* --- Boutons et Liens --- */
+.liens_code {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px dashed #00d4ff;
+  border-radius: 10px;
+  background: rgba(0, 212, 255, 0.02);
+  text-align: center;
+}
+
+.liens_code strong {
+  background: none;
+  padding: 0;
+}
+
+/* Animation au survol des images */
+.img_projet img {
+  height: 100%;
+  width: auto;
+  border-radius: 5px;
+  filter: grayscale(20%);
+  transition: 0.3s ease;
+}
+
+.img_projet:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.01);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+  .img_projet {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 5px 0;
+    margin: 40px 0 40px 50%;
+    transform: translateX(-50%);
+  }
+  .img_projet img {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  h2 {
+    font-size: 1.4rem;
+    padding-left: 10px;
+  }
+}
