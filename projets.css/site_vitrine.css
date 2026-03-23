@@ -59,7 +59,6 @@ strong {
 
 /* --- SECTION IMAGES (Flyers & Charte) --- */
 .img_projet {
-  max-width: 900px;
   margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
@@ -69,9 +68,6 @@ strong {
 }
 
 .img_projet p {
-  width: 100%;
-  max-width: 400px; /* Deux images par ligne sur grand écran */
-  height: 250px; /* Taille fixe pour les placeholders */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,14 +80,12 @@ strong {
 }
 
 /* Si tu remplaces les <p> par des <img> plus tard : */
-.img_projet img {
-  width: 100%;
-  max-width: 420px;
+/* .img_projet img {
   border-radius: 10px;
   border: 1px solid rgba(0, 212, 255, 0.3);
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
+  /* aucune taille imposée */
 
 .img_projet img:hover {
   transform: translateY(-5px);

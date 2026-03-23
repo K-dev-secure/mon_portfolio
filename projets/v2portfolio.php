@@ -43,8 +43,8 @@
 </div>
 
 <div class='liens_code'>
-    <p><strong>Lien vers le code source :</strong> [Ton lien GitHub ici]</p>
-    <p><strong>Lien vers la démo :</strong> [Ton lien de site ici]</p>
+    <p><strong>Lien vers le code source : </strong><a href="https://github.com/K-dev-secure/v2_portfolio_react.git" target="_blank"> Lien vers mon code source </a></p>
+   
 </div>
 
 <div>
