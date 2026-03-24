@@ -1,3 +1,4 @@
+
 /* ── Section À Propos ── */
 .background_propos {
     position: relative;
@@ -107,20 +108,37 @@
 
 /* ── Bouton CV ── */
 .CV {
-    width: fit-content;
+    width: 100%;
+    max-width: 700px;
     margin: 40px auto;
     border: 1px solid #00d4ff;
     border-radius: 12px;
     transition: all 0.3s ease;
+    padding: 24px 48px 20px 48px;
+    background: rgba(0, 212, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .CV a {
-    display: block;
-    padding: 15px 35px;
+    text-align: center;
+    padding: 18px 40px;
     text-decoration: none;
     color: #00d4ff;
     font-size: 1.2rem;
     font-weight: bold;
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+    .CV {
+        padding: 16px 8px 12px 8px;
+        max-width: 98vw;
+    }
+    .CV a {
+        padding: 14px 8vw;
+        font-size: 1rem;
+    }
 }
 
 .CV:hover {
