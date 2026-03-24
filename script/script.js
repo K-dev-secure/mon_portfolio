@@ -1,135 +1,162 @@
-function initTechCarousel() {
-  const carousel = document.getElementById('carousel');
-  if (!carousel) {
+
+
+/* --- Fonction : Créer le carrousel des technologies --- */
+function creerCarrousel() {
+
+  // On récupère la div qui va contenir le carrousel
+  var carrousel = document.getElementById('carousel');
+
+  // Si la div n'existe pas sur la page, on arrête
+  if (!carrousel) {
     return;
   }
 
-  const technologies = [
-    { icon: 'fab fa-html5', label: 'HTML' },
-    { icon: 'fab fa-css3-alt', label: 'CSS' },
-    { icon: 'fab fa-php', label: 'PHP' },
-    { icon: 'fab fa-react', label: 'React' },
-    { icon: 'fab fa-wordpress', label: 'WordPress' },
-    { icon: 'fab fa-figma', label: 'Figma' }
+  // Liste de toutes les technologies à afficher
+  var technologies = [
+    { icone: 'fab fa-html5',         nom: 'HTML' },
+    { icone: 'fab fa-css3-alt',      nom: 'CSS' },
+    { icone: 'fab fa-js',            nom: 'JavaScript' },
+    { icone: 'fab fa-php',           nom: 'PHP' },
+    { icone: 'fab fa-react',         nom: 'React' },
+    { icone: 'fab fa-wordpress',     nom: 'WordPress' },
+    { icone: 'fab fa-figma',         nom: 'Figma' },
+    { icone: 'fab fa-linux',         nom: 'Linux' },
+    { icone: 'fab fa-docker',        nom: 'Docker' },
+    { icone: 'fas fa-code',          nom: 'TypeScript' },
+    { icone: 'fas fa-network-wired', nom: 'Packet Tracer' }
   ];
 
-  const createItem = (tech) => `
-    <div class="logo-tech">
-      <i class="${tech.icon}"></i>
-      <span>${tech.label}</span>
-    </div>
-  `;
+  // On crée le HTML pour chaque technologie
+  var elementsHTML = '';
+  for (var i = 0; i < technologies.length; i++) {
+    elementsHTML += '<div class="logo-tech">';
+    elementsHTML += '  <i class="' + technologies[i].icone + '"></i>';
+    elementsHTML += '  <span>' + technologies[i].nom + '</span>';
+    elementsHTML += '</div>';
+  }
 
-  const originalItems = technologies.map(createItem).join('');
-
-  carousel.innerHTML = `
-    <div class="carrousel-stack" aria-label="Technologies principales">
-      <div class="piste-carrousel">
-        ${originalItems}${originalItems}
-      </div>
-    </div>
-  `;
+  // On met le contenu dans la div (doublé pour l'effet de boucle infinie)
+  carrousel.innerHTML =
+    '<div class="carrousel-stack">' +
+    '  <div class="piste-carrousel">' +
+         elementsHTML + elementsHTML +
+    '  </div>' +
+    '</div>';
 }
 
-function initBurgerMenu() {
-  const nav = document.querySelector('.nav');
-  const navList = nav ? nav.querySelector('ul') : null;
 
-  if (!nav || !navList) {
+function creerMenuBurger() {
+
+  // On récupère la barre de navigation et la liste des liens
+  var navigation = document.querySelector('.nav');
+  var listeLiens = navigation ? navigation.querySelector('ul') : null;
+
+  // Si la navigation n'existe pas, on arrête
+  if (!navigation || !listeLiens) {
     return;
   }
 
-  navList.id = 'mainMenu';
+  // On donne un id à la liste pour l'accessibilité
+  listeLiens.id = 'mainMenu';
 
-  let burgerBtn = document.getElementById('burgerMenuBtn');
-  if (!burgerBtn) {
-    burgerBtn = document.createElement('button');
-    burgerBtn.id = 'burgerMenuBtn';
-    burgerBtn.type = 'button';
-    burgerBtn.setAttribute('aria-label', 'Ouvrir le menu');
-    burgerBtn.setAttribute('aria-controls', 'mainMenu');
-    burgerBtn.innerHTML = '<span></span><span></span><span></span>';
-    nav.insertBefore(burgerBtn, navList);
+  // On crée le bouton burger (les 3 barres)
+  var bouton = document.getElementById('burgerMenuBtn');
+  if (!bouton) {
+    bouton = document.createElement('button');
+    bouton.id = 'burgerMenuBtn';
+    bouton.type = 'button';
+    bouton.setAttribute('aria-label', 'Ouvrir le menu');
+    bouton.setAttribute('aria-controls', 'mainMenu');
+    bouton.setAttribute('aria-expanded', 'false');
+    bouton.innerHTML = '<span></span><span></span><span></span>';
+    navigation.insertBefore(bouton, listeLiens);
   }
 
-  let menuOverlay = document.getElementById('menuOverlay');
-  if (!menuOverlay) {
-    menuOverlay = document.createElement('div');
-    menuOverlay.id = 'menuOverlay';
-    document.body.appendChild(menuOverlay);
+  // On crée le fond sombre qui apparaît derrière le menu
+  var fondSombre = document.getElementById('menuOverlay');
+  if (!fondSombre) {
+    fondSombre = document.createElement('div');
+    fondSombre.id = 'menuOverlay';
+    document.body.appendChild(fondSombre);
   }
 
-  const mainMenu = navList;
-  const menuLinks = mainMenu.querySelectorAll('li a');
+  // On récupère tous les liens du menu
+  var tousLesLiens = listeLiens.querySelectorAll('li a');
 
-  function openMenu() {
-    burgerBtn.classList.add('active');
-    mainMenu.classList.add('active');
-    menuOverlay.classList.add('active');
+
+  // Fonction pour ouvrir le menu
+  function ouvrirMenu() {
+    bouton.classList.add('active');
+    listeLiens.classList.add('active');
+    fondSombre.classList.add('active');
     document.body.style.overflow = 'hidden';
-    burgerBtn.setAttribute('aria-expanded', 'true');
+    bouton.setAttribute('aria-expanded', 'true');
   }
 
-  function closeMenu() {
-    burgerBtn.classList.remove('active');
-    mainMenu.classList.remove('active');
-    menuOverlay.classList.remove('active');
+  // Fonction pour fermer le menu
+  function fermerMenu() {
+    bouton.classList.remove('active');
+    listeLiens.classList.remove('active');
+    fondSombre.classList.remove('active');
     document.body.style.overflow = '';
-    burgerBtn.setAttribute('aria-expanded', 'false');
+    bouton.setAttribute('aria-expanded', 'false');
   }
 
-  function toggleMenu() {
-    if (burgerBtn.classList.contains('active')) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  }
-
-  burgerBtn.addEventListener('click', function (e) {
+  // Quand on clique sur le bouton burger : ouvrir ou fermer
+  bouton.addEventListener('click', function (e) {
     e.preventDefault();
     e.stopPropagation();
-    toggleMenu();
+    if (bouton.classList.contains('active')) {
+      fermerMenu();
+    } else {
+      ouvrirMenu();
+    }
   });
 
-  menuOverlay.addEventListener('click', function () {
-    closeMenu();
+  // Quand on clique sur le fond sombre : fermer le menu
+  fondSombre.addEventListener('click', function () {
+    fermerMenu();
   });
 
-  menuLinks.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
+  // Quand on clique sur un lien du menu
+  tousLesLiens.forEach(function (lien) {
+    lien.addEventListener('click', function (e) {
+      var destination = this.getAttribute('href');
 
-      if (href && href.startsWith('#')) {
+      // Si c'est un lien vers une section de la page (#)
+      if (destination && destination.startsWith('#')) {
         e.preventDefault();
-        const target = document.querySelector(href);
-        closeMenu();
-        if (target) {
-          target.scrollIntoView({ behavior: 'auto', block: 'start' });
+        var cible = document.querySelector(destination);
+        fermerMenu();
+        if (cible) {
+          cible.scrollIntoView({ behavior: 'auto', block: 'start' });
         }
         return;
       }
 
-      closeMenu();
+      // Sinon on ferme juste le menu
+      fermerMenu();
     });
   });
 
+  // Touche Échap = fermer le menu
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && burgerBtn.classList.contains('active')) {
-      closeMenu();
+    if (e.key === 'Escape' && bouton.classList.contains('active')) {
+      fermerMenu();
     }
   });
 
+  // Si on agrandit la fenêtre, on ferme le menu mobile
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 980 && burgerBtn.classList.contains('active')) {
-      closeMenu();
+    if (window.innerWidth > 980 && bouton.classList.contains('active')) {
+      fermerMenu();
     }
   });
-
-  burgerBtn.setAttribute('aria-expanded', 'false');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  initBurgerMenu();
-  initTechCarousel();
+
+/* --- Lancement au chargement de la page --- */
+document.addEventListener('DOMContentLoaded', function () {
+  creerMenuBurger();
+  creerCarrousel();
 });

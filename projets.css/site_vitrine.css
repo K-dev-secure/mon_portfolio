@@ -121,7 +121,6 @@ strong {
 }
 
 .liens_code a:hover {
-  background: #eaf6fb;
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
 }
@@ -136,8 +135,10 @@ strong {
 }
   /* Empilement des flyers sur mobile pour garder la lisibilité */
   .flyers {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 20px;
   }
   
   .flyers img {
@@ -145,8 +146,13 @@ strong {
       max-width: 850px;
       margin: 40px auto;
       display: flex;
-      flex-direction: row; /* Aligne les deux images sur une ligne */
       gap: 20px; /* Espace entre les deux flyers */
-      padding: 10px;
-      align-items: center;
+     
 }
+
+@media (max-width: 768px) {
+  .flyers { 
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Plus d'espace entre les flyers en mode empilé */
+   }  }
