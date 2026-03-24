@@ -27,7 +27,7 @@
     </div>
 
     <div class='img_projet'>
-        <img src="../images/ligne_commande_1.png" alt="Capture du terminal montrant mkdir, cd et ls pour prouver l'organisation du dossier">
+        <img src="../images/commande1_linux.png" alt="Capture du terminal montrant mkdir, cd et ls pour prouver l'organisation du dossier">
     </div>
 
     <div>
@@ -36,7 +36,7 @@
     </div>
 
     <div class='img_projet'>
-        <img src="../images/script_agenda.png" alt="Capture de l'éditeur Nano affichant le code source Bash avec la coloration syntaxique">
+        <img src="../images/script_linux.png" alt="Capture de l'éditeur Nano affichant le code source Bash avec la coloration syntaxique">
     </div>
 
     
@@ -47,7 +47,7 @@
     </div>
 
     <div class='img_projet'>
-        <p>[PHOTO 3 : Résultat de ls -l montrant le fichier agenda.sh en vert ou avec les droits 'x' activés]</p>
+        <img src="../images/permission_linux.png" alt="Résultat de ls -l montrant le fichier agenda.sh en vert ou avec les droits 'x' activés">
     </div>
 
     <div>
@@ -67,7 +67,7 @@
     </div>
 
     <div class='img_projet'>
-        <img src="../images/tache_automatiser.png" alt="Capture finale montrant le contenu du fichier tache.txt généré par le bot">
+        <img src="../images/message_reussi_linux.png" alt="Capture finale montrant le contenu du fichier tache.txt généré par le bot">
     </div>
 
     <div>

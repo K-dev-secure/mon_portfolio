@@ -62,11 +62,10 @@ strong {
 }
 
 .img_projet img {
-  width: 100%;
-  max-width: 380px; /* Deux images par ligne sur PC */
   border-radius: 8px;
   border: 1px solid rgba(0, 212, 255, 0.2);
   transition: transform 0.3s ease;
+  /* aucune taille imposée */
 }
 
 .img_projet img:hover {
@@ -108,5 +107,5 @@ strong {
   h2 { font-size: 1.2rem; margin: 40px 20px 10px 20px; }
   p { font-size: 0.95rem; margin: 15px 20px; }
   .titre_projet { padding-top: 60px; }
-  .img_projet img { max-width: 100%; }
+  /* .img_projet img { max-width: 100%; } supprimé pour laisser la taille naturelle */
 }
