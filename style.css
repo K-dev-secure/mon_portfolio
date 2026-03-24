@@ -237,6 +237,7 @@ main {
     margin-top: 20px;
     display: flex;
     gap: 24px;
+    z-index: 2;
 }
 
 .reseaux-sociaux a {

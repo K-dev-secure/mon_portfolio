@@ -58,37 +58,50 @@ strong {
 }
 
 /* --- SECTION IMAGES (Flyers & Charte) --- */
+
+/* Conteneur pour la charte graphique (Image seule) */
 .img_projet {
+  max-width: 850px;
   margin: 40px auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
   justify-content: center;
   padding: 10px;
 }
-.img_projet  {
-  display: flex;
-}
-.img_projet p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: rgba(0, 212, 255, 0.05);
-  border: 2px dashed rgba(0, 212, 255, 0.3);
-  color: #00d4ff;
-  font-style: italic;
-  font-size: 0.9rem;
-}
 
-.img_projet img, .img_projet_flyer img {
-  max-width: 250px;
+.img_projet img {
+  width: 100%;
+  max-width: 750px; /* Taille optimale pour la charte */
+  height: auto;
   border-radius: 10px;
   border: 1px solid rgba(0, 212, 255, 0.3);
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
-.img_projet img:hover, .img_projet_flyer img:hover {
+
+/* Conteneur spécifique pour les Flyers (Côte à côte) */
+.img_projet_flyer {
+  max-width: 850px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row; /* Aligne les deux images sur une ligne */
+  justify-content: center;
+  gap: 20px; /* Espace entre les deux flyers */
+  padding: 10px;
+}
+
+.img_projet_flyer img {
+  width: calc(50% - 10px); /* Prend la moitié du conteneur moins le gap */
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Hover commun pour toutes les images */
+.img_projet img:hover, 
+.img_projet_flyer img:hover {
   transform: translateY(-5px);
   border-color: #00d4ff;
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
@@ -127,8 +140,21 @@ strong {
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .titre_projet h1 { font-size: 1.8rem; }
+  
   h2 { font-size: 1.2rem; margin: 40px 20px 15px 20px; }
+  
   p { font-size: 0.95rem; margin: 15px 20px; padding: 15px; }
-  .img_projet p { max-width: 100%; height: 200px; }
+
+  /* Empilement des flyers sur mobile pour garder la lisibilité */
+  .img_projet_flyer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .img_projet_flyer img {
+    width: 90%;
+    max-width: 350px;
+  }
+
   .liens_code a { display: block; margin: 10px 20px; }
 }
