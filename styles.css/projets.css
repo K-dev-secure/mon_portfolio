@@ -13,7 +13,7 @@
 
 .mes_projets h2 {
     font-size: 40px;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', monospace;
     color: white;
     margin-bottom: 24px;
 }
@@ -21,14 +21,14 @@
 .mes_projets h3 {
     color: #00d4ff;
     font-size: 32px;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', monospace;
     margin: 42px 0 22px;
     padding: 30px;
 }
 
 .mes_projets > div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 26px;
 }
 
@@ -43,14 +43,15 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
 }
 
 .first_card:hover,
 .second_card:hover,
 .third_card:hover {
-    border: 3px solid rgba(0, 255, 300, 0.55);
+    border: 3px solid #00d4ff;
     box-shadow: 0 0 30px rgba(0, 212, 255, 0.35);
-    border-color: #00d4ff;
 }
 
 .first_card img,
@@ -61,22 +62,22 @@
     object-fit: cover;
     display: block;
     filter: brightness(0.3);
+    transition: filter 0.3s ease;
 }
-
-
 
 .first_card:hover img,
 .second_card:hover img,
 .third_card:hover img {
     filter: brightness(1);
-    transition: filter 0.3s ease;
 }
-
 
 .first_card > div,
 .second_card > div,
 .third_card > div {
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permet à la div interne de prendre toute la hauteur */
 }
 
 .first_card h4,
@@ -84,58 +85,42 @@
 .third_card h4 {
     font-size: 20px;
     margin: 0 0 12px;
-    padding: 15px 0;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', monospace;
     color: #00d4ff;
 }
 
 .first_card p,
 .second_card p,
 .third_card p {
-    display: flex;
-    align-items: center;
-    margin: 0 0 12px;
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', monospace;
     color: #e8f4ff;
-    padding: 0 0 25px;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Le texte pousse les outils vers le bas */
 }
 
 .outils_utilisés {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 20px;
     gap: 10px;
-   
+    margin-top: auto; /* Aligne le bloc d'outils au bas de la carte */
 }
 
 .outils_utilisés p {
+    flex-grow: 0;
+    margin: 0;
+    padding: 6px 12px;
     border: 1px solid rgba(0, 212, 255, 0.25);
     background-color: rgba(0, 212, 255, 0.1);
     border-radius: 8px;
-    padding: 6px 12px;
-    margin: 4px;
     font-size: 14px;
     color: #00d4ff;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
 }
 
 @media (max-width: 900px) {
     .mes_projets > div {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-    .first_card,
-    .second_card,
-    .third_card {
-        max-width: none;
-    }
-    .first_card > div,
-    .second_card > div,
-    .third_card > div {
-        padding: 10px;
     }
 }
