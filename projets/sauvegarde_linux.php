@@ -10,7 +10,7 @@
     <title>V2 Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="../images/favicon-dev.svg" />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../projets.css/v2portfolio.css" />
+    <link rel="stylesheet" href="../projets.css/sauvegarde_linux.css" />
   </head>
   <body>
     <?php include '../menu.php'; ?>

@@ -37,10 +37,8 @@ function creerCarrousel() {
 
   // On met le contenu dans la div (doublé pour l'effet de boucle infinie)
   carrousel.innerHTML =
-    '<div class="carrousel-stack">' +
-    '  <div class="piste-carrousel">' +
-         elementsHTML + elementsHTML +
-    '  </div>' +
+    '<div class="piste-carrousel">' +
+       elementsHTML + elementsHTML +
     '</div>';
 }
 
