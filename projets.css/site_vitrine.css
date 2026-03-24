@@ -66,7 +66,9 @@ strong {
   justify-content: center;
   padding: 10px;
 }
-
+.img_projet  {
+  display: flex;
+}
 .img_projet p {
   display: flex;
   align-items: center;
@@ -79,15 +81,14 @@ strong {
   font-size: 0.9rem;
 }
 
-/* Si tu remplaces les <p> par des <img> plus tard : */
-/* .img_projet img {
+.img_projet img, .img_projet_flyer img {
+  max-width: 250px;
   border-radius: 10px;
   border: 1px solid rgba(0, 212, 255, 0.3);
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  /* aucune taille imposée */
-
-.img_projet img:hover {
+}
+.img_projet img:hover, .img_projet_flyer img:hover {
   transform: translateY(-5px);
   border-color: #00d4ff;
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);

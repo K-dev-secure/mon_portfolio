@@ -33,7 +33,7 @@
         <h2>La publicité : Création de flyers</h2>
         <p>Pour aider l'entreprise à trouver des clients, j'ai créé des <strong>flyers</strong> (des feuilles publicitaires). J'ai repris le logo et les couleurs de la charte que j'avais définie. J'ai fait attention à ce que les images soient jolies et que les textes soient faciles à lire. J'ai aussi préparé les fichiers pour l'imprimeur afin que les couleurs sortent parfaitement sur le papier.</p>
 
-        <div class='img_projet'>
+        <div class='img_projet_flyer'>
             <img src="/images/flyer_expatrié.png" alt="Flyer Recto">
             <img src="/images/flyer_particulier.png" alt="Flyer Verso">
         </div>
