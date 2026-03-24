@@ -35,7 +35,7 @@
     border: 1px solid rgba(0, 212, 255, 0.15);
     border-radius: 14px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 19px;
     line-height: 1.6;
     color: white;
 }
@@ -53,7 +53,7 @@
 
 .contenu-experience h3 {
     margin-bottom: 50px;
-    font-size: 2.5rem;
+    font-size: 40px;
     color: #00d4ff;
     text-align: center;
     text-transform: uppercase;
@@ -81,7 +81,7 @@
 
 .frise article h4 {
     margin: 0 0 8px;
-    font-size: 1.4rem;
+    font-size: 22px;
     color: #ffffff;
     font-family: 'Fira Code', monospace;
 }
@@ -91,13 +91,13 @@
     color: #00d4ff;
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .frise article p {
     margin: 0;
     color: #cbd5e0;
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
 .frise article ul {
@@ -126,7 +126,7 @@
     padding: 18px 40px;
     text-decoration: none;
     color: #00d4ff;
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: bold;
     border-radius: 8px;
 }
@@ -137,7 +137,7 @@
     }
     .CV a {
         padding: 14px 8vw;
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
 
@@ -161,21 +161,68 @@
     text-align: center;
     margin-bottom: 30px;
     color: #00d4ff;
-    font-size: 2rem;
+    font-size: 32px;
 }
 
-/* Style simple pour tes logos (en attendant ton script carousel) */
+/* ── Carrousel Tech ── */
 #carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carrousel-stack {
+    overflow: hidden;
+    width: 100%;
+}
+
+.piste-carrousel {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 40px;
+    animation: defilement 15s linear infinite;
+    width: max-content;
+}
+
+.logo-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 100px;
+    color: #cbd5e0;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.logo-tech i {
+    font-size: 40px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo-tech .fa-html5 { color: #e34f26; }
+.logo-tech .fa-css3-alt { color: #1572b6; }
+.logo-tech .fa-php { color: #777bb4; }
+.logo-tech .fa-react { color: #61dafb; }
+.logo-tech .fa-wordpress { color: #21759b; }
+.logo-tech .fa-figma { color: #f24e1e; }
+
+.logo-tech:hover i {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+.logo-tech:hover span {
+    color: #ffffff;
+}
+
+@keyframes defilement {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
     .texte-a-propos h2 { font-size: 30px; }
-    .texte-a-propos p { padding: 20px; font-size: 1rem; }
+    .texte-a-propos p { padding: 20px; font-size: 16px; }
     
     .frise article {
         padding: 15px 20px;

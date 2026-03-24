@@ -18,7 +18,7 @@ body {
 }
 
 .titre_projet h1 {
-  font-size: 2.8rem;
+  font-size: 45px;
   color: #00d4ff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -30,7 +30,7 @@ h2 {
   color: #00d4ff;
   max-width: 900px;
   margin: 60px auto 20px auto;
-  font-size: 1.8rem;
+  font-size: 29px;
   border-left: 4px solid #00d4ff;
   padding-left: 15px;
 }
@@ -38,7 +38,7 @@ h2 {
 p {
   max-width: 900px;
   margin: 20px auto;
-  font-size: 1.1rem;
+  font-size: 18px;
   color: #ccd6f6;
   text-align: justify;
 }
@@ -86,7 +86,7 @@ p {
   font-weight: bold;
   border-radius: 5px;
   transition: all 0.3s ease;
-  font-size: 1.2rem;
+  font-size: 19px;
 }
 
 .liens_code a:hover {
@@ -97,7 +97,7 @@ p {
 
 /* --- RESPONSIVE MOBILE --- */
 @media (max-width: 768px) {
-  .titre_projet h1 { font-size: 1.8rem; }
+  .titre_projet h1 { font-size: 29px; }
   p { width: 90%; text-align: left; }
   .img_projet { width: 95%; }
 }

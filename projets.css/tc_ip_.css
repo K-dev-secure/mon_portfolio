@@ -20,7 +20,7 @@ body {
 
 .titre_projet h1 {
   color: #00d4ff;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 800;
   margin: 0;
   text-transform: uppercase;
@@ -29,7 +29,7 @@ body {
 
 h2 {
   color: #00d4ff;
-  font-size: 1.6rem;
+  font-size: 26px;
   max-width: 850px;
   margin: 50px auto 20px auto;
   padding-left: 20px;
@@ -37,7 +37,7 @@ h2 {
 }
 
 p, ul {
-  font-size: 1.05rem;
+  font-size: 17px;
   line-height: 1.8;
   max-width: 850px;
   margin: 20px auto;
@@ -98,7 +98,7 @@ strong {
 .liens_code h3 {
   color: #00d4ff;
   margin-bottom: 25px;
-  font-size: 1.4rem;
+  font-size: 22px;
 }
 
 .liens_code a {
@@ -123,8 +123,8 @@ strong {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-  .titre_projet h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.3rem; margin-left: 20px; margin-right: 20px; }
-  p, ul { margin: 15px 20px; font-size: 0.95rem; }
+  .titre_projet h1 { font-size: 29px; }
+  h2 { font-size: 21px; margin-left: 20px; margin-right: 20px; }
+  p, ul { margin: 15px 20px; font-size: 15px; }
   .liens_code a { width: 80%; padding: 15px; }
 }

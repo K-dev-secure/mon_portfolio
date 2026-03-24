@@ -25,7 +25,7 @@ function initTechCarousel() {
   carousel.innerHTML = `
     <div class="carrousel-stack" aria-label="Technologies principales">
       <div class="piste-carrousel">
-        ${originalItems}
+        ${originalItems}${originalItems}
       </div>
     </div>
   `;
