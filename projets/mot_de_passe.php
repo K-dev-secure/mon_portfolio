@@ -14,7 +14,6 @@
 
     <body>
     <?php include '../menu.php'; ?>
-    <p>Forme libre, 5 à 7 pages – À remettre au format PDF</p>
 
    <!DOCTYPE html>
 <html lang="fr">
@@ -51,7 +50,7 @@
     </div>
 
     <div class='img_projet'>
-        <p>[PHOTO CONSEILLÉE : Capture d'écran After Effects montrant les points de rotoscopie autour de toi]</p>
+        <img src="/images/retroscoipie.png" alt="Capture d'écran After Effects montrant les points de rotoscopie autour de toi">
     </div>
 
     <div>
@@ -65,7 +64,7 @@
     </div>
 
     <div class='img_projet'>
-        <p>[PHOTO CONSEILLÉE : Capture d'écran de ta Timeline Premiere Pro (on doit voir toutes les pistes audio et vidéo)]</p>
+        <img src="/images/premiere_pro.png" alt="Capture d'écran Premiere Pro Timeline">
     </div>
 
     

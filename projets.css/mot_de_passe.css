@@ -40,14 +40,14 @@ h2 {
 
 /* --- TEXTE ET PARAGRAPHES --- */
 p {
-  font-size: 17px;
-  max-width: 820px;
+    font-size: 17px;
+  line-height: 1.8;
+  max-width: 850px;
   margin: 20px auto;
-  padding: 18px; 
-  box-shadow: 0 1px 8px 0 rgba(0,212,255,0.03);
-  border: 1px solid rgba(0, 212, 255, 0.05);
-  background: rgba(0, 212, 255, 0.02); /* Optionnel : léger fond pour les blocs texte */
-  border-radius: 8px;
+  padding: 15px 25px;
+  background: rgba(0, 212, 255, 0.02);
+  border: 1px solid rgba(0, 212, 255, 0.08);
+  border-radius: 10px;
 }
 
 strong {
@@ -84,7 +84,7 @@ strong {
 
 .img_projet img {
   width: 100%;
-  max-width: 380px; 
+  max-width: 700px; 
   border-radius: 8px;
   border: 1px solid rgba(0, 212, 255, 0.2);
   transition: transform 0.3s ease;

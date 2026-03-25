@@ -21,6 +21,8 @@ body {
 
 .titre_projet h1 {
   color: #00d4ff;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+
   font-size: 45px;
   font-weight: 700;
   margin: 0;
@@ -96,33 +98,32 @@ strong {
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
 }
 
-/* --- BOUTONS ET LIENS (GitHub & Site) --- */
+/* --- BOUTONS ET LIENS --- */
 .liens_code {
-  max-width: 850px;
-  margin: 50px auto;
+  max-width: 820px;
+  margin: 40px auto;
   text-align: center;
-  padding: 30px;
-  background: rgba(0, 212, 255, 0.07);
-  border-radius: 15px;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  padding: 20px;
+  background: rgba(0, 212, 255, 0.05);
+  border-radius: 12px;
+  border: 1px dashed #00d4ff55;
 }
 
 .liens_code a {
   display: inline-block;
-  margin: 15px;
-  padding: 12px 25px;
-  color: #0a1016;
-  background: #00d4ff;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #00d4ff;
   text-decoration: none;
-  font-weight: 700;
-  border-radius: 8px;
+  border: 1px solid #00d4ff;
+  border-radius: 5px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
 }
 
 .liens_code a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+  background: #00d4ff;
+  color: #0a1016;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
 }
 
 /* --- RESPONSIVE --- */
