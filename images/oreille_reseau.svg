@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" rx="20" fill="#0a1016"/>
+  <g transform="translate(200,180)">
+    <!-- Ear shape -->
+    <path d="M0,-100 C60,-100 100,-60 100,0 C100,50 80,80 50,100 C30,112 20,120 15,140 C12,155 5,160 0,160 C-5,160 -10,150 -8,135 C-5,115 10,100 25,88 C50,70 65,45 65,10 C65,-35 40,-65 0,-65 C-40,-65 -65,-35 -65,10 C-65,30 -55,50 -40,60" 
+          fill="none" stroke="#00d4ff" stroke-width="6" stroke-linecap="round"/>
+    <!-- Inner ear detail -->
+    <path d="M-20,-30 C10,-35 30,-15 30,10 C30,30 15,45 0,45 C-10,45 -15,35 -10,25 C-5,15 5,10 10,5 C15,-5 10,-15 -5,-15" 
+          fill="none" stroke="#00d4ff" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <!-- Sound waves -->
+    <path d="M110,-30 C125,-15 125,15 110,30" fill="none" stroke="#00d4ff" stroke-width="3" opacity="0.5"/>
+    <path d="M125,-50 C150,-25 150,25 125,50" fill="none" stroke="#00d4ff" stroke-width="3" opacity="0.35"/>
+    <path d="M140,-70 C175,-35 175,35 140,70" fill="none" stroke="#00d4ff" stroke-width="3" opacity="0.2"/>
+  </g>
+  <!-- Label -->
+  <text x="200" y="370" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="18" opacity="0.6">Écoute Réseau</text>
+</svg>
