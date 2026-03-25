@@ -1,36 +1,51 @@
 /* --- SECTION CONTACT --- */
 .section-contact {
     position: relative;
-    padding: 80px 20px;
-    text-align: center;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 80px 0;
 }
 
 .section-contact h2 {
-    color: #00d4ff;
-    font-size: 28px;
-    margin-bottom: 40px;
-    text-align: left;
+    position: relative;
+    font-size: 40px;
     font-family: 'Fira Code', monospace;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-left: 0;
+    color: #9fa9b8;
+    margin: 0 0 20px;
+    text-align: left;
 }
 
 .section-contact h2 span {
     color: #00d4ff;
-    margin-right: 10px;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+    margin-right: 0.18em;
+}
+
+.section-contact h3 {
+    position: relative;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8892b0;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
 
 .contact-cards {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    max-width: 700px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .contact-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +75,12 @@
 .contact-card p {
     font-size: 16px;
     margin: 0;
-    color: #ccd6f6;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-contact p {
+    text-align: center;
 }
 
 /* --- RESPONSIVE --- */

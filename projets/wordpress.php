@@ -50,13 +50,11 @@
         <p>La partie la plus délicate a été la mise en place du <strong>formulaire de contact</strong>. Il fallait que les demandes des prospects arrivent directement et proprement dans la boîte mail du conseiller de façon sécurisée. Enfin, j'ai dû apprendre à mettre le site en ligne sur l'hébergeur <strong>IONOS</strong>. Comme c'était une opération très technique impliquant le transfert de la base de données et des fichiers, j'ai regardé beaucoup de tutoriels pour réussir ce déploiement sans provoquer d'erreurs sur le serveur.</p>
     </div>
 
-    <div class='img_projet'>
-        <p>[PHOTO CONSEILLÉE : Capture d'écran de la page d'accueil du site AR Conseil une fois terminé et en ligne]</p>
-    </div>
+    
 
     <div class='liens_code'>
-        <p><strong>Voir le site en direct :</strong> <a href="LIEN_DU_SITE_ICI" target="_blank">Visiter AR Conseil</a></p>
-        <p><strong>GitHub :</strong> <a href="https://github.com/K-dev-secure/Ar_conseil_wordpress"_blank">Code source</a></p>
+        <p><strong>Voir le site en direct :</strong> <a href="https://arconseils-patrimoine.com" target="_blank">Visiter AR Conseil</a></p>
+        <p><strong>GitHub :</strong> <a href="https://github.com/K-dev-secure/Ar_conseil_wordpress" target="_blank">Code source</a></p>
     </div>
 
     <div>
