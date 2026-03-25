@@ -12,8 +12,8 @@ $projets = ($current == 'index.html' || $current == 'index.php')
   ? '#projets'
   : '../index.html#projets';
 $contact = ($current == 'index.html' || $current == 'index.php')
-  ? '#accueil'
-  : '../index.html#accueil';
+  ? '#contact'
+  : '../index.html#contact';
 ?>
 <header>
   <nav class="nav">

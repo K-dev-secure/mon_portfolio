@@ -1,0 +1,76 @@
+/* --- SECTION CONTACT --- */
+.section-contact {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-contact h2 {
+    color: #00d4ff;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 0;
+}
+
+.section-contact h2 span {
+    color: #00d4ff;
+    margin-right: 10px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #eaf6fb;
+    transition: all 0.3s ease;
+    min-width: 250px;
+}
+
+.contact-card:hover {
+    border-color: #00d4ff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+}
+
+.contact-card i {
+    font-size: 32px;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    margin: 0;
+    color: #ccd6f6;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card {
+        min-width: 200px;
+        width: 90%;
+    }
+}

@@ -31,8 +31,8 @@
         <p>Nous étions deux sur ce projet et la collaboration a été la clé du succès. J'ai activement participé avec mon binôme à la création de l'<strong>UX/UI</strong>, c'est-à-dire toute l'apparence visuelle et le parcours de l'utilisateur sur le site. Nous avons réfléchi ensemble à la disposition des éléments pour que le site de <strong>AR Conseil</strong> soit clair, rassurant et extrêmement professionnel. L'idée était de créer une ambiance de confiance pour que leurs futurs clients se sentent à l'aise dès les premières secondes de navigation.</p>
     </div>
 
-    <div class='img_projet' style="max-width: 1000px;">
-        <p>[PHOTO CONSEILLÉE : Capture d'écran de l'ensemble de ta maquette avec toutes les pages reliées entre elles]</p>
+    <div class='img_projet'>
+        <img src="/images/maquette_figma.png" alt="">
     </div>
 
     <div>
@@ -56,7 +56,7 @@
 
     <div class='liens_code'>
         <p><strong>Voir le site en direct :</strong> <a href="LIEN_DU_SITE_ICI" target="_blank">Visiter AR Conseil</a></p>
-        <p><strong>GitHub :</strong> <a href="https://github.com/K-dev-secure/Ar_conseil_wordpress" target="_blank">Code source</a></p>
+        <p><strong>GitHub :</strong> <a href="https://github.com/K-dev-secure/Ar_conseil_wordpress"_blank">Code source</a></p>
     </div>
 
     <div>
