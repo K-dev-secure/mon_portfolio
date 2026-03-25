@@ -96,5 +96,8 @@
       <h2>Conclusion</h2>
       <p>Ce projet de cours m'a appris qu'une petite faille de programmation peut compromettre tout un système 
       En comprenant comment attaquer sur <strong>VirtualBox</strong>, j'ai acquis les réflexes nécessaires pour mieux conseiller les entreprises sur leur protection</p>
-    </div>  </body>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
 </html>

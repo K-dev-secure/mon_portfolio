@@ -79,5 +79,6 @@
         <p>Ce projet prouve ma capacité à m'approprier des outils pro (IA, After Effects, montage) pour servir une cause importante : la sensibilisation. J'ai appris que pour bien conseiller en sécurité, il faut savoir communiquer efficacement. C'est cette double compétence, technique et humaine, que je souhaite continuer à développer.</p>
     </div>
 
+    <script src="../script/script.js"></script>
 </body>
 </html>

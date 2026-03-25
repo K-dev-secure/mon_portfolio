@@ -56,3 +56,7 @@
     <h2>Compétences et bilan des ateliers</h2>
     <p>Ce projet m'a appris à devenir autonome dans ma recherche d'information (docs, tutos, forums). J'ai compris l'intérêt de React pour organiser un projet proprement et j'ai acquis des bases en TypeScript. Mes objectifs de montée en compétence sont atteints : je sais maintenant comment construire et faire évoluer une application web structurée de façon professionnelle.</p>
 </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

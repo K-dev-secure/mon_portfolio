@@ -63,5 +63,7 @@
         <h2>Bilan et Compétences Acquises</h2>
         <p>Ce stage a été une véritable immersion professionnelle. J'ai appris à gérer la relation client, à traduire des besoins métier en solutions techniques et à respecter des délais de livraison stricts. Ce projet prouve ma capacité à piloter une création digitale de bout en bout : depuis la conception artistique sur la suite Adobe jusqu'au déploiement technique complexe sur serveur. Travailler sur du code "pur" a consolidé ma logique de programmation, me rendant beaucoup plus autonome et confiant pour aborder des architectures plus complexes à l'avenir.</p>
     </div>
+
+    <script src="../script/script.js"></script>
   </body>
 </html>

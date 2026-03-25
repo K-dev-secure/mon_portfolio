@@ -63,5 +63,7 @@
         <h2>Bilan : Un client et des étudiants satisfaits</h2>
         <p>Le résultat final a été très positif : le client était ravi d'avoir enfin une vitrine sérieuse et moderne pour son activité à Lyon. Pour moi, ce projet est une grande réussite personnelle et professionnelle. J'ai appris à gérer un projet de A à Z, de la première discussion client jusqu'à la mise en ligne technique. Cette expérience m'a montré l'importance de la polyvalence entre le design, le code et la gestion humaine pour livrer un produit de qualité professionnelle.</p>
     </div>
+
+    <script src="../script/script.js"></script>
   </body>
 </html>

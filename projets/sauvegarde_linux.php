@@ -79,5 +79,7 @@
         <p><strong>Environnement :</strong> Linux (Bash / Debian)</p>
         <p><strong>Outils utilisés :</strong> Nano, Crontab, chmod</p>
     </div>
+
+    <script src="../script/script.js"></script>
   </body>
 </html>

@@ -70,5 +70,7 @@
       <h2>Le mot de la fin</h2>
       <p><strong>J'ai vraiment aimé ce défi.</strong> C'était gratifiant de partir d'un écran vide pour arriver à une infrastructure complexe qui communique parfaitement. En <strong>Cybersécurité</strong>, on ne peut pas protéger ce qu'on ne comprend pas. Ce projet m'a donné les bases solides dont j'ai besoin : pour bien défendre un château, il faut d'abord savoir comment on en a posé chaque brique !</p>
     </div>
+
+    <script src="../script/script.js"></script>
   </body>
 </html>
