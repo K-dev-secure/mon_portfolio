@@ -17,9 +17,9 @@
 <body>
     <?php include '../menu.php'; ?>
 
-<div class='titre_projet'>
-    <h1>V2 Portfolio : Modernisation avec React et TypeScript</h1>
-</div>
+    <div class='titre_projet'>
+        <h1>V2 Portfolio : Modernisation avec React et TypeScript</h1>
+    </div>
 
 <p>Ce projet consiste à reconstruire mon portfolio pour passer d'un site classique à une application web moderne. Mon but était de monter en gamme techniquement en utilisant des outils professionnels pour obtenir un code plus propre, mieux structuré et plus performant.</p>
 

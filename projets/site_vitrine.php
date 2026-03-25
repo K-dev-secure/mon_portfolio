@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V2 Portfolio</title>
+    <title>Site Vitrine - MK Assurance</title>
     <link rel="icon" type="image/svg+xml" href="../images/favicon-dev.svg" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../projets.css/site_vitrine.css" />
-    </head>
+  </head>
   <body>
     <?php include '../menu.php'; ?>
-  <div class='titre_projet'>
+
+    <div class='titre_projet'>
         <h1>Site vitrine</h1>
     </div>
 
@@ -25,7 +26,7 @@
         <p>Le logo de l'entreprise existait déjà, mais il n'y avait pas de règles pour l'utiliser. J'ai donc créé une <strong>charte graphique</strong>. C'est un document qui fixe les couleurs officielles et les polices d'écriture pour que tous les documents de l'entreprise se ressemblent et fassent "pro". J'ai utilisé des outils de dessin pour que ces visuels restent bien nets sur tous les supports.</p>
         
         <div class='img_projet'>
-            <img src="/images/charte_graphique.png" alt="Charte graphique de MK ASSURANCE">
+            <img src="../images/charte_graphique.png" alt="Charte graphique de MK ASSURANCE">
         </div>
     </div>
 
@@ -34,8 +35,8 @@
         <p>Pour aider l'entreprise à trouver des clients, j'ai créé des <strong>flyers</strong> (des feuilles publicitaires). J'ai repris le logo et les couleurs de la charte que j'avais définie. J'ai fait attention à ce que les images soient jolies et que les textes soient faciles à lire. J'ai aussi préparé les fichiers pour l'imprimeur afin que les couleurs sortent parfaitement sur le papier.</p>
 
         <div class="flyers">
-           <img src="/images/flyer_expatrié.png" alt="Flyer Expatrié">
-           <img src="/images/flyer_particulier.png" alt="Flyer Particulier">
+           <img src="../images/flyer_expatrié.png" alt="Flyer Expatrié">
+           <img src="../images/flyer_particulier.png" alt="Flyer Particulier">
         </div>
     </div>
 

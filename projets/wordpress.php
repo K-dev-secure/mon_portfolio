@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V2 Portfolio</title>
+    <title>WordPress - AR Conseil</title>
     <link rel="icon" type="image/svg+xml" href="../images/favicon-dev.svg" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../projets.css/v2portfolio.css" />
@@ -56,7 +56,7 @@
 
     <div class='liens_code'>
         <p><strong>Voir le site en direct :</strong> <a href="LIEN_DU_SITE_ICI" target="_blank">Visiter AR Conseil</a></p>
-        <p><strong>GitHub :</strong> <a href="LIEN_DU_REPO_ICI" target="_blank">Code source</a></p>
+        <p><strong>GitHub :</strong> <a href="https://github.com/K-dev-secure/Ar_conseil_wordpress" target="_blank">Code source</a></p>
     </div>
 
     <div>

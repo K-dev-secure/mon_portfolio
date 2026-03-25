@@ -31,7 +31,7 @@
         Une machine qui répond au ping confirme qu'elle est "vivante" sur le réseau et que sa surface d'attaque est prête à être scannée</p>
 
         <div class="img_projet">
-           <img src="/images/ping_offensive.png" alt="Capture de ton terminal Kali montrant que la machine cible répond bien">
+           <img src="../images/ping_offensive.png" alt="Capture de ton terminal Kali montrant que la machine cible répond bien">
             <em>Capture de ton terminal Kali montrant que la machine cible (192.168.x.x) répond bien</em>
         </div>
         
@@ -46,7 +46,7 @@
         Au lieu de chercher un seul utilisateur, la base de données déverrouille l'intégralité de ses dossiers et m'affiche tous les comptes clients avec leurs noms et leurs codes secrets (hashs)</p>
 
         <div class="img_projet">
-            <img src="/images/utilisateur_infiltrer.png" alt="Capture de l'interface DVWA montrant tous les utilisateurs qui s'affichent après l'injection">
+            <img src="../images/utilisateur_infiltrer.png" alt="Capture de l'interface DVWA montrant tous les utilisateurs qui s'affichent après l'injection">
             <em>Capture de l'interface DVWA montrant tous les utilisateurs qui s'affichent après l'injection</em>
         </div>
         
@@ -61,7 +61,7 @@
         C'est une faille redoutable car elle permet de voler des informations sensibles comme les cookies qui servent à s'identifier sans mot de passe</p>
 
         <div class="img_projet">
-            <img src="/images/faille_xss.png" alt="Capture du navigateur montrant l'alerte avec le PHPSESSID par-dessus le site DVWA">
+            <img src="../images/faille_xss.png" alt="Capture du navigateur montrant l'alerte avec le PHPSESSID par-dessus le site DVWA">
             <em>Capture du navigateur montrant l'alerte avec le PHPSESSID par-dessus le site DVWA</em>
         </div>
         
@@ -76,7 +76,7 @@
         Une fois ce cookie récupéré, je peux <strong>usurper l'identité</strong> de la victime et accéder à son compte privé instantanément sans connaître son mot de passe</p>
 
         <div class="img_projet">
-           <img src="/images/ecoute_cookie_cyber.png" alt="Capture du terminal Netcat montrant la requête GET contenant le cookie volé">
+           <img src="../images/ecoute_cookie_cyber.png" alt="Capture du terminal Netcat montrant la requête GET contenant le cookie volé">
             <em>Capture du terminal Netcat montrant la requête GET contenant le cookie volé</em>
         </div>
         

@@ -7,24 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V2 Portfolio</title>
+    <title>Sensibilisation Cybersécurité</title>
     <link rel="icon" type="image/svg+xml" href="../images/favicon-dev.svg" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../projets.css/mot_de_passe.css" />
-
-    <body>
+  </head>
+  <body>
     <?php include '../menu.php'; ?>
-
-   <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Cybersécurité - Sensibilisation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 
     <div class='titre_projet'>
         <h1>Projet de Sensibilisation : La Sécurité des Mots de Passe</h1>
@@ -50,7 +39,7 @@
     </div>
 
     <div class='img_projet'>
-        <img src="/images/retroscoipie.png" alt="Capture d'écran After Effects montrant les points de rotoscopie autour de toi">
+        <img src="../images/retroscoipie.png" alt="Capture d'écran After Effects montrant les points de rotoscopie autour de toi">
     </div>
 
     <div>
@@ -64,10 +53,8 @@
     </div>
 
     <div class='img_projet'>
-        <img src="/images/premiere_pro.png" alt="Capture d'écran Premiere Pro Timeline">
+        <img src="../images/premiere_pro.png" alt="Capture d'écran Premiere Pro Timeline">
     </div>
-
-    
 
     <div>
         <h2>Les Défis : De la technique à la pédagogie</h2>

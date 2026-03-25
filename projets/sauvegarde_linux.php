@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V2 Portfolio</title>
+    <title>Automatisation Linux</title>
     <link rel="icon" type="image/svg+xml" href="../images/favicon-dev.svg" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../projets.css/sauvegarde_linux.css" />
@@ -39,8 +39,6 @@
         <img src="../images/script_linux.png" alt="Capture de l'éditeur Nano affichant le code source Bash avec la coloration syntaxique">
     </div>
 
-    
-
     <div>
         <h2>Étape 3 : Sécurité et Gestion des Permissions</h2>
         <p>Sous Linux, la sécurité est stricte : un fichier texte n'est pas exécutable par défaut. J'ai utilisé la commande <strong>chmod +x</strong> pour modifier les droits d'accès et transformer mon script en un véritable programme autonome. J'ai ensuite vérifié ce changement avec <strong>ls -l</strong>, m'assurant que les attributs d'exécution étaient correctement positionnés. C'est une manipulation clé pour comprendre comment on sécurise ou autorise des processus sur un serveur.</p>
@@ -58,8 +56,6 @@
     <div class='img_projet'>
         <p>[PHOTO 4 : Capture de ton fichier Crontab ouvert avec la ligne de planification programmée]</p>
     </div>
-
-    
 
     <div>
         <h2>Étape 5 : Validation et Absence de difficultés</h2>
