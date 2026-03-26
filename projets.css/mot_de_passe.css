@@ -65,11 +65,10 @@ strong {
   background: #000;
 }
 
-.video-container video {
+.video-container iframe {
   width: 100%;
+  aspect-ratio: 9 / 16;
   display: block;
-  /* aspect-ratio: 9 / 16;  Retiré car la vidéo est déjà au format mobile */
-  object-fit: cover;
 }
 
 /* --- SECTION IMAGES --- */

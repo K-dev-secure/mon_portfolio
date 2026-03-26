@@ -22,10 +22,7 @@
     <p>Ce projet est né d'une volonté d'explorer la cybersécurité, un domaine qui me passionne. Mon idée : créer un support de prévention capable de transformer un sujet complexe en un contenu simple et rassurant pour tous.</p>
 
     <div class="video-container">
-        <video controls poster="miniature.jpg">
-            <source src="votre-video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
+        <iframe src="https://www.youtube.com/embed/gPKyAXl0hB4" title="Sensibilisation mots de passe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div>
