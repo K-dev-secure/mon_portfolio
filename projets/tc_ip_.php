@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio - Projet Cisco</title>
+    <title> Projet Cisco</title>
     <link rel="icon" type="image/svg+xml" href="../images/favicon-dev.svg" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../projets.css/tc_ip_.css" />
@@ -16,7 +16,7 @@
     <?php include '../menu.php'; ?>
     
     <div class='titre_projet'>
-        <h1>Mon défi Réseau : Bâtir une Infrastructure d'Entreprise</h1>
+        <h1> Bâtir une Infrastructure d'Entreprise</h1>
     </div>
 
     <p>Tout a commencé lors du <strong>Booster Portfolio</strong>. Je me suis retrouvé face à une page blanche sur le logiciel <strong>Cisco Packet Tracer</strong> avec une mission : concevoir le réseau complet d'une entreprise. Mon objectif était de créer un système où chaque ordinateur pourrait communiquer parfaitement, tout en gardant le projet accessible en <strong>local</strong> (directement sur mon PC) pour pouvoir le présenter à tout moment, même sans connexion internet.</p>
