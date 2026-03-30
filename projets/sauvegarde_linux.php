@@ -19,61 +19,59 @@
         <h1>Automatisation Linux : Création d'un "Agenda-Bot"</h1>
     </div>
 
-    <p>Ce projet personnel est né d'une volonté de plonger au cœur des systèmes Unix. En cybersécurité, la maîtrise de Linux est fondamentale : j'ai donc conçu un script Bash capable de générer des tâches quotidiennes de maintenance et de les automatiser totalement. Ce travail me permet de démontrer ma capacité à naviguer dans l'arborescence système, à manipuler des fichiers et à programmer des outils d'administration sans interface graphique.</p>
-
-    <div>
-        <h2>Étape 1 : Architecture et Navigation Système</h2>
-        <p>Pour débuter, j'ai structuré mon environnement de travail en ligne de commande. J'ai utilisé la commande <strong>mkdir</strong> pour créer un répertoire dédié nommé "MonAgenda", puis je me suis déplacé à l'intérieur avec <strong>cd</strong>. Cette étape, bien que simple, illustre ma connaissance de la hiérarchie des fichiers Linux et ma capacité à organiser proprement un projet technique directement depuis le terminal.</p>
-    </div>
-
-    <div class='img_projet'>
-        <img src="../images/commande1_linux.png" alt="Capture du terminal montrant mkdir, cd et ls pour prouver l'organisation du dossier">
+   <div>
+        <h2>Contexte et Enjeux</h2>
+        <p>Dans le cadre de mon <strong>Booster Portfolio</strong>, j'ai voulu m'attaquer à un pilier de la cybersécurité : le système Linux. En entreprise, on ne peut pas tout faire à la main sur les serveurs. L'enjeu de ce projet personnel était de créer un script capable d'automatiser des tâches répétitives. Mon public cible est ici un administrateur système qui souhaite gagner du temps et sécuriser ses processus de maintenance.</p>
     </div>
 
     <div>
-        <h2>Étape 2 : Développement du Script Shell (Bash)</h2>
-        <p>Le cœur du projet repose sur le fichier <strong>agenda.sh</strong>, que j'ai rédigé avec l'éditeur de texte <strong>Nano</strong>. J'ai programmé une logique conditionnelle (if/elif/else) qui s'adapte automatiquement à la date du jour. Le script récupère le nom du jour via la variable système <em>date +%A</em> et inscrit une mission spécifique dans un fichier de sortie (ex: Mises à jour le lundi, Sauvegardes le mercredi). C'est ici que je démontre mes bases en algorithmique appliquée au scripting système.</p>
-    </div>
-
-    <div class='img_projet'>
-        <img src="../images/script_linux.png" alt="Capture de l'éditeur Nano affichant le code source Bash avec la coloration syntaxique">
-    </div>
-
-    <div>
-        <h2>Étape 3 : Sécurité et Gestion des Permissions</h2>
-        <p>Sous Linux, la sécurité est stricte : un fichier texte n'est pas exécutable par défaut. J'ai utilisé la commande <strong>chmod +x</strong> pour modifier les droits d'accès et transformer mon script en un véritable programme autonome. J'ai ensuite vérifié ce changement avec <strong>ls -l</strong>, m'assurant que les attributs d'exécution étaient correctement positionnés. C'est une manipulation clé pour comprendre comment on sécurise ou autorise des processus sur un serveur.</p>
-    </div>
-
-    <div class='img_projet'>
-        <img src="../images/permission_linux.png" alt="Résultat de ls -l montrant le fichier agenda.sh en vert ou avec les droits 'x' activés">
+        <h2>Objectifs du projet</h2>
+        <p>Le but était de concevoir un "assistant" autonome. Je devais : <br>
+        Créer un script intelligent qui change de mission selon le jour de la semaine.<br>
+        Automatiser son lancement sans aucune intervention humaine.<br>
+        Maîtriser la gestion des droits et des fichiers en ligne de commande (Terminal).</p>
     </div>
 
     <div>
-        <h2>Étape 4 : Automatisation avec le démon Cron</h2>
-        <p>Pour que mon assistant soit réellement utile, il devait travailler seul. J'ai configuré le planificateur de tâches <strong>Crontab</strong> pour qu'il déclenche mon script chaque minute. En ajoutant la ligne de planification avec les "5 étoiles" pointant vers mon script, j'ai rendu le système totalement indépendant. Cette compétence est essentielle en entreprise pour automatiser les sauvegardes ou les scans de vulnérabilités sans intervention humaine.</p>
-    </div>
-
-    <div class='img_projet'>
-        <p>[PHOTO 4 : Capture de ton fichier Crontab ouvert avec la ligne de planification programmée]</p>
-    </div>
-
-    <div>
-        <h2>Étape 5 : Validation et Absence de difficultés</h2>
-        <p>Le test final a consisté à laisser le système agir en arrière-plan. Après une minute, j'ai utilisé la commande <strong>cat</strong> pour lire le fichier généré automatiquement. Le résultat était parfait : le rapport était daté et la mission du jour correctement inscrite. Ce projet s'est déroulé sans difficulté majeure, ce qui confirme mon aisance croissante avec les commandes fondamentales de Linux (renommer, déplacer, éditer et exécuter).</p>
-    </div>
-
-    <div class='img_projet'>
-        <img src="../images/message_reussi_linux.png" alt="Capture finale montrant le contenu du fichier tache.txt généré par le bot">
+        <h2>Action 1 : Organisation de l'espace de travail</h2>
+        <p>Pour commencer proprement, j'ai structuré mon projet directement depuis le terminal. J'ai utilisé <strong>mkdir</strong> pour créer mon dossier "MonAgenda" et <strong>cd</strong> pour m'y installer. Savoir naviguer dans l'arborescence Linux sans interface graphique est la base pour gérer n'importe quel serveur distant.</p>
+        <div class='img_projet'>
+            <img src="../images/commande1_linux.png" alt="Capture du terminal montrant l'organisation du dossier">
+        </div>
     </div>
 
     <div>
-        <h2>Bilan : Maîtrise de l'administration Linux</h2>
-        <p>Ce projet personnel prouve que je possède les bases pour administrer un système Linux. Entre le scripting Bash, la gestion des permissions Unix et l'automatisation via Cron, j'ai pu valider des compétences techniques directement applicables en milieu professionnel.</p>
+        <h2>Action 2 : Développement du script Bash</h2>
+        <p>J'ai rédigé mon programme <strong>agenda.sh</strong> avec l'éditeur <strong>Nano</strong>. J'ai utilisé une logique simple (si c'est lundi, fais ceci ; si c'est mardi, fais cela). Le script détecte automatiquement la date et écrit la mission du jour dans un fichier texte. C’est ici que je montre ma capacité à coder des petits outils d'administration système.</p>
+        <div class='img_projet'>
+            <img src="../images/script_linux.png" alt="Capture du code source Bash dans Nano">
+        </div>
+    </div>
+
+    <div>
+        <h2>Action 3 : Sécurisation et droits d'accès</h2>
+        <p>Sous Linux, un fichier ne peut pas "agir" s'il n'en a pas le droit. J'ai utilisé la commande <strong>chmod +x</strong> pour donner les permissions d'exécution à mon script. C'est une étape cruciale en sécurité informatique : on ne donne des droits qu'à ce qui est nécessaire. J'ai vérifié le résultat avec <strong>ls -l</strong> pour m'assurer que tout était bien configuré.</p>
+        <div class='img_projet'>
+            <img src="../images/permission_linux.png" alt="Résultat de la commande ls -l sur les permissions">
+        </div>
+    </div>
+
+    <div>
+        <h2>Action 4 : Mise en place du pilote automatique (Cron)</h2>
+        <p>Un assistant n'est utile que s'il travaille seul. J'ai configuré <strong>Crontab</strong>, le planificateur de tâches de Linux. J'ai programmé mon script pour qu'il s'exécute chaque minute. C'est exactement la technique qu'utilisent les entreprises pour lancer des sauvegardes ou des scans de virus pendant la nuit.</p>
+        <div class='img_projet'>
+             <img src="../images/crontab_linux.png" alt="Capture du fichier Crontab avec la planification">
+        </div>
+    </div>
+
+    <div>
+        <h2>Résultats et Bilan</h2>
+        <p>Le test final a été un succès total. En utilisant la commande <strong>cat</strong>, j'ai pu voir que le système créait bien ses rapports de tâches tout seul. Ce projet s'est déroulé sans encombre et prouve que je suis à l'aise avec les commandes de base de Linux. J'ai appris à transformer une suite de commandes manuelles en un processus industriel automatisé, une compétence clé pour n'importe quel poste en infrastructure ou en cybersécurité.</p>
     </div>
 
     <div class='liens_code'>
-        <p><strong>Environnement :</strong> Linux (Bash / Debian)</p>
-        <p><strong>Outils utilisés :</strong> Nano, Crontab, chmod</p>
+        <p><strong>Environnement :</strong> Linux (Debian / Bash)</p>
+        <p><strong>Outils clés :</strong> Nano, Crontab, Gestion des permissions (chmod)</p>
     </div>
 
     <script src="../script/script.js"></script>

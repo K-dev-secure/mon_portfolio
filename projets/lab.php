@@ -16,64 +16,58 @@
     <?php include '../menu.php'; ?>
     
     <div class='titre_projet'>
-        <h1>Automatisation LAB PowerShell</h1>
+        <h1>Automatisation : Déploiement d'arborescence via PowerShell</h1>
     </div>
 
-    <p>Ce projet de cours consistait à développer un script <strong>PowerShell</strong> capable de construire automatiquement une structure de dossiers complexe 
-    L'objectif est de gagner du temps et d'éviter les erreurs humaines lors de la mise en place d'un environnement de travail pour une entreprise</p>
+    <div>
+        <h2>Contexte et Enjeux</h2>
+        <p>Ce projet de cours consistait à répondre à une problématique courante en entreprise : comment créer rapidement et sans erreur une structure de dossiers complexe pour un nouveau client ou un nouveau projet ? L'enjeu est de remplacer les dizaines de clics manuels par un script <strong>PowerShell</strong> capable de tout automatiser en une seconde.</p>
+    </div>
 
     <div>
-        <h2>1. Développement du script dans PowerShell ISE</h2>
-        <p>Pour concevoir cet outil, j'ai utilisé l'environnement de développement <strong>PowerShell ISE</strong> qui permet d'écrire et de tester le code proprement 
-        Le script utilise des <strong>Variables</strong> pour stocker le nom de l'entreprise et un <strong>Tableau (Array)</strong> qui contient ma liste de services comme la Direction, l'Info ou les RH</p>
-        
-        <p>La logique repose sur une boucle <strong>ForEach</strong> qui répète la création pour chaque service de la liste 
-        J'ai intégré une condition <strong>IF (Test-Path)</strong> pour vérifier si le dossier existe déjà avant de le créer, ce qui évite les messages d'erreur du système 
-        Enfin, le <strong>Pipeline (|)</strong> permet d'envoyer du texte directement dans un fichier de preuve à l'intérieur de chaque nouveau dossier</p>
+        <h2>Objectifs du projet</h2>
+        <p>Le but était de développer un outil fiable capable de : <br>
+         Créer une architecture de dossiers hiérarchisée (Direction, RH, Informatique, etc.). <br>
+         Vérifier l'existence des dossiers pour éviter les erreurs. <br>
+         Générer un fichier de preuve dans chaque dossier pour confirmer le bon fonctionnement.</p>
+    </div>
+
+    <div>
+        <h2>Action 1 : Développement dans PowerShell ISE</h2>
+        <p>Pour concevoir le script, j'ai utilisé l'environnement <strong>PowerShell ISE</strong>. J'ai structuré mon code en utilisant des <strong>Variables</strong> pour le nom de l'entreprise et un <strong>Tableau (Array)</strong> pour la liste des services. <br><br>
+        Le cœur du script repose sur une boucle <strong>ForEach</strong> : elle parcourt ma liste et exécute la création pour chaque service. J'ai ajouté une condition <code>if (Test-Path)</code> : c'est une sécurité qui vérifie si le dossier existe déjà avant de tenter de le créer, ce qui évite de polluer la console avec des messages d'erreur rouges.</p>
 
         <div class="img_projet">
-            <img src="/images/script_powsershel.png" alt="">
-            <em>Aperçu de la structure du script avec les variables et la boucle de création</em>
+            <img src="/images/script_powsershel.png" alt="Aperçu du script PowerShell ISE">
+            <em>Preuve : Structure du script avec la boucle ForEach et la condition de test.</em>
         </div>
-        
     </div>
 
     <div>
-        <h2>2. Exécution dans la console</h2>
-        <p>Une fois le code validé, je l'ai exécuté via la console PowerShell 
-        Le script traite l'intégralité de la liste en moins d'une seconde, garantissant qu'aucun dossier n'est oublié et qu'aucune faute de frappe n'est commise dans les noms des services</p>
+        <h2>Action 2 : Test et exécution en console</h2>
+        <p>Une fois le code écrit, je l'ai lancé directement dans la console PowerShell. C'est l'étape de vérité : le script traite toute la liste instantanément. Contrairement à une création manuelle, ici il n'y a aucune faute de frappe possible dans le nom des dossiers et aucun service n'est oublié. C'est un gain de temps énorme pour un administrateur système.</p>
 
         <div class="img_projet">
-            <img src="/images/console_powershell.png" alt="">
-            <em>Affichage du succès de l'opération dans l'invité de commande PowerShell</em>
+            <img src="/images/console_powershell.png" alt="Exécution du script dans la console">
+            <em>Action : Lancement du script et retour visuel du succès de l'opération.</em>
         </div>
-        
     </div>
 
     <div>
-        <h2>3. Résultat final : L'arborescence Windows</h2>
-        <p>Le résultat est visible instantanément dans l'explorateur de fichiers 
-        Le script a créé un dossier racine sur le disque <strong>C:</strong>, puis tous les sous-dossiers demandés, chacun contenant un petit fichier texte automatique servant de preuve de bon fonctionnement</p>
+        <h2>Action 3 : Vérification du résultat final</h2>
+        <p>Le résultat est immédiat dans l'explorateur Windows. Le script a généré le dossier racine sur le disque <strong>C:</strong> et tous les sous-dossiers correspondants. À l'intérieur de chaque dossier, un fichier texte a été créé automatiquement via le <strong>Pipeline (|)</strong>, servant de rapport pour prouver que le dossier est bien accessible en écriture.</p>
 
         <div class="img_projet">
-            <img src="/images/dosssiers_powershel.png" alt="">
-            <em>Vue des dossiers Direction, Info et RH créés automatiquement sur le disque local</em>
+            <img src="/images/dosssiers_powershel.png" alt="Résultat de l'arborescence dans Windows">
+            <em>Résultat : L'arborescence complète créée proprement sur le disque local.</em>
         </div>
-        
-    </div>
-
-    <div class='liens_code'>
-        <h3>Conclusion technique</h3>
-        <p>Ce projet d'automatisation prouve qu'un simple script peut remplacer des dizaines de clics manuels 
-        C'est une compétence essentielle pour un administrateur système qui souhaite gérer efficacement un parc informatique de grande taille</p>
     </div>
 
     <div>
-      <h2>Perspectives</h2>
-      <p>À l'avenir, ce même script pourrait être amélioré pour attribuer automatiquement des droits d'accès différents à chaque service ou pour créer des comptes utilisateurs sur un serveur</p>
+        <h2>Résultats et Bilan</h2>
+        <p>Ce projet prouve qu'un petit script bien pensé peut remplacer un travail manuel long et fastidieux. J'ai appris à manipuler les bases de l'automatisation système (boucles, variables, conditions). C’est une compétence que je pourrai faire évoluer, par exemple pour créer automatiquement des comptes utilisateurs ou gérer des droits d'accès sur un serveur d'entreprise.</p>
     </div>
 
     <script src="../script/script.js"></script>
   </body>
-  
 </html>

@@ -19,9 +19,14 @@
         <h1>Sensibilisation Cybersécurité</h1>
     </div>
 
+   <div>
+        <h2>Contexte et enjeux</h2>
+        <p>Ce projet a été réalisé dans le cadre de mon <strong>Booster Portfolio</strong>. L'idée était de simuler une mission de sensibilisation pour une entreprise. Mon public cible ? Les personnes "non-tech" qui n'ont aucune notion informatique. Si je devais viser un employeur avec ce travail, ce serait des structures comme <strong>Jade Cybersécurité</strong> ou des médias de vulgarisation comme la chaîne de <strong>Micode</strong>.</p>
+    </div>
+
     <div>
-        <h2>Le Contexte : Booster Portfolio</h2>
-        <p>Ce projet a été réalisé dans le cadre de mon <strong>Booster Portfolio</strong> à l'école. L'idée était de simuler une mission de sensibilisation pour une entreprise. Si je devais viser un employeur, ce projet s'adresserait à des boîtes comme <strong>Jade Cybersécurité</strong> ou des créateurs qui vulgarisent la tech, à l'image de la chaîne YouTube de <strong>Micode</strong>. Mon public cible ? Les personnes "non-tech" qui n'ont aucune notion informatique et qui veulent juste protéger leur vie numérique.</p>
+        <h2>Objectifs du projet</h2>
+        <p>Le but était de créer un contenu pédagogique capable de transformer un sujet complexe en conseils simples. Je voulais que n'importe qui, après avoir vu la vidéo, puisse vérifier la solidité de ses comptes et comprendre pourquoi ses anciens mots de passe étaient dangereux.</p>
     </div>
 
     <div class="video-container">
@@ -29,13 +34,13 @@
     </div>
 
     <div>
-        <h2>Le problème de poids : Pourquoi l'iframe ?</h2>
-        <p>Ma vidéo dure 1min20. Au début, je voulais la mettre directement sur le site, mais le fichier était trop lourd et faisait ramer la page. J'ai donc choisi de l'héberger sur YouTube en "non répertorié" pour l'intégrer via une <strong>iframe</strong>. C'est une solution qui permet de garder un portfolio ultra rapide tout en proposant du contenu HD.</p>
+        <h2>Action 1 : Résoudre le problème de poids (Iframe)</h2>
+        <p>Ma vidéo dure 1min20. Au début, je voulais l'intégrer directement, mais le fichier était trop lourd et faisait ramer le site. Pour que l'expérience utilisateur reste fluide, j'ai choisi de l'héberger sur YouTube en "non répertorié" et de l'intégrer via une <strong>iframe</strong>. C'est une solution technique qui permet de garder un portfolio rapide tout en diffusant de la HD.</p>
     </div>
 
     <div>
-        <h2>L'outil : Un analyseur relié à Have I Been Pwned</h2>
-        <p>Comme je n'avais pas encore beaucoup de connaissances en cyber, j'ai voulu créer un outil pédagogique. J'ai conçu un analyseur de mot de passe en m'aidant de l'IA pour la logique, et je l'ai relié à l'API de <strong>Have I Been Pwned</strong>. Ce site regroupe tous les mots de passe compromis dans le monde. Ça permet à l'utilisateur de voir concrètement si son code a déjà été piraté.</p>
+        <h2>Action 2 : Création de l'analyseur avec l'IA</h2>
+        <p>Comme je n'avais pas encore beaucoup de connaissances en cyber, j'ai conçu un analyseur de mot de passe. Je me suis aidé de l'IA pour la logique du code et je l'ai relié à l'API de <strong>Have I Been Pwned</strong>. Ce site regroupe tous les mots de passe piratés dans le monde : l'utilisateur peut donc tester en direct si son code est déjà connu des hackers.</p>
     </div>
 
     <div class='img_projet'>
@@ -43,13 +48,13 @@
     </div>
 
     <div>
-        <h2>La galère technique : 6h de rotoscopie</h2>
-        <p>Pour rendre la vidéo dynamique, j'ai utilisé la <strong>rotoscopie</strong> sur After Effects pour glisser des graphiques derrière moi. Ma grosse erreur : je me suis filmé avec un pull noir sur un fond noir... Le logiciel était perdu ! J'ai dû tout détourer à la main, image par image. Ça m'a pris <strong>6 heures de travail</strong> acharné. J'ai appris à mes dépens qu'un fond vert (ou au moins contrasté) est indispensable pour gagner du temps au montage.</p>
+        <h2>Action 3 : La galère de la rotoscopie (6h de travail)</h2>
+        <p>Pour rendre le tuto dynamique, j'ai utilisé la <strong>rotoscopie</strong> sur After Effects. Ma grosse erreur : je me suis filmé avec un pull noir sur un fond noir... Le logiciel ne me distinguait plus du décor ! J'ai dû tout détourer à la main, image par image. Ça m'a pris <strong>6 heures de travail</strong> acharné. J'ai appris par l'erreur qu'un fond vert (ou un fort contraste) est indispensable pour gagner du temps.</p>
     </div>
 
     <div>
-        <h2>Montage et Voix Off</h2>
-        <p>J'ai finalisé le montage sur <strong>Premiere Pro</strong>. Pour que l'explication soit la plus claire possible pour un débutant, j'ai utilisé l'IA <strong>ElevenLabs</strong> pour générer une voix off propre. J'ai ensuite synchronisé chaque animation pour que le tutoriel reste fluide et facile à comprendre du début à la fin.</p>
+        <h2>Action 4 : Montage et Voix Off professionnelle</h2>
+        <p>J'ai finalisé le montage sur <strong>Premiere Pro</strong>. Pour que l'explication soit claire et pro, j'ai utilisé l'IA <strong>ElevenLabs</strong> pour générer une voix off. J'ai ensuite synchronisé chaque texte à l'écran sur le rythme de la voix pour que même un débutant puisse suivre sans décrocher.</p>
     </div>
 
     <div class='img_projet'>
@@ -57,8 +62,8 @@
     </div>
 
     <div>
-        <h2>Bilan : Apprendre de ses erreurs</h2>
-        <p>Ce projet m'a appris à gérer des contraintes réelles : le poids des fichiers, les erreurs de tournage et la vulgarisation technique. C'est ce mélange de compétences (savoir coder un outil, monter une vidéo et expliquer simplement un sujet complexe) que je veux mettre en avant aujourd'hui.</p>
+        <h2>Résultats et Bilan</h2>
+        <p>Ce projet m'a appris à gérer des contraintes réelles de production. Aujourd'hui, j'ai un livrable concret : une vidéo de sensibilisation fluide et un outil d'analyse fonctionnel. J'ai prouvé ma capacité à apprendre un sujet technique (la cyber), à utiliser l'IA pour coder et à transformer des erreurs de tournage en expérience concrète.</p>
     </div>
 
     <script src="../script/script.js"></script>

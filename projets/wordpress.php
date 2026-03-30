@@ -16,50 +16,53 @@
     <?php include '../menu.php'; ?>
     
     <div class='titre_projet'>
-        <h1>Création d'un site sur-mesure : AR Conseil</h1>
-    </div>
-
-    <p>Le but du projet "Fil Rouge" était de sortir du cadre scolaire pour trouver un vrai client et résoudre son problème de visibilité. Nous avons accompagné <strong>AR Conseil</strong>, une jeune entreprise de conseil en patrimoine basée à Lyon. Au moment de notre rencontre, ils n'avaient aucune présence sur Internet, ce qui freinait leur développement. Nous leur avons donc créé un site WordPress professionnel, élégant et surtout conçu pour qu'ils puissent modifier eux-mêmes les textes et images en toute autonomie.</p>
-
-    <div>
-        <h2>Organisation : La note de cadrage</h2>
-        <p>Pour ne pas s'éparpiller et garantir le respect des délais, nous avons commencé par rédiger une <strong>note de cadrage</strong> détaillée. C'est un document indispensable qui explique au client exactement ce que nous allons réaliser, les fonctionnalités choisies et les limites de notre intervention. Ce travail préparatoire nous a permis de rester concentrés sur ses besoins réels, de rassurer le client sur notre sérieux et de valider chaque étape stratégique avec lui lors de nos réunions hebdomadaires.</p>
+        <h1>Projet Fil Rouge : Création du site AR Conseil</h1>
     </div>
 
     <div>
-        <h2>Design et Collaboration : L'étape UX/UI</h2>
-        <p>Nous étions deux sur ce projet et la collaboration a été la clé du succès. J'ai activement participé avec mon binôme à la création de l'<strong>UX/UI</strong>, c'est-à-dire toute l'apparence visuelle et le parcours de l'utilisateur sur le site. Nous avons réfléchi ensemble à la disposition des éléments pour que le site de <strong>AR Conseil</strong> soit clair, rassurant et extrêmement professionnel. L'idée était de créer une ambiance de confiance pour que leurs futurs clients se sentent à l'aise dès les premières secondes de navigation.</p>
+        <h2>Contexte et Enjeux</h2>
+        <p>Le projet "Fil Rouge" est un exercice de fin d'année où nous devions sortir du cadre scolaire pour accompagner un vrai client. Avec mon binôme, nous avons travaillé pour <strong>AR Conseil</strong>, un cabinet de gestion de patrimoine à Lyon. À notre arrivée, ils n'avaient aucun site internet. L'enjeu était de créer une présence digitale sérieuse pour rassurer leurs prospects et attirer de nouveaux clients.</p>
+    </div>
+
+    <div>
+        <h2>Objectifs du projet</h2>
+        <p>L'objectif était double : <br>
+         Créer un site vitrine élégant et professionnel qui reflète la confiance du secteur du patrimoine.<br>
+         Rendre le client totalement autonome pour qu'il puisse modifier ses textes et images lui-même via WordPress.</p>
+    </div>
+
+    <div>
+        <h2>Action 1 : Organisation et Cadrage</h2>
+        <p>Pour ne pas foncer tête baissée, nous avons rédigé une <strong>note de cadrage</strong>. Ce document a servi de contrat moral avec le client : il liste ce qu'on fait, ce qu'on ne fait pas et les délais. Malgré l'emploi du temps très chargé du client qui rendait les échanges parfois lents, ce document nous a permis de garder le cap et de valider chaque étape stratégique lors de nos points hebdomadaires.</p>
+    </div>
+
+    <div>
+        <h2>Action 2 : Design et Maquettage UX/UI</h2>
+        <p>Nous avons travaillé à deux sur la conception visuelle. L'idée était de créer un parcours utilisateur clair. Nous avons utilisé Figma pour dessiner les maquettes avant de toucher au code. L'objectif était de s'assurer que le futur client de AR Conseil trouve l'information essentielle en moins de trois clics.</p>
     </div>
 
     <div class='img_projet'>
-        <img src="/images/maquette_figma.png" alt="">
+        <img src="/images/maquette_figma.png" alt="Maquette Figma du projet AR Conseil">
     </div>
 
     <div>
-        <h2>Mon rôle principal : Développeur Intégrateur</h2>
-        <p>Une fois le design validé par le client, j'ai pris les commandes de toute la partie <strong>développement</strong>. Mon rôle était de transformer nos maquettes en un site WordPress fonctionnel. J'ai dû coder la structure pour qu'elle respecte exactement le visuel prévu et m'assurer que le site soit parfaitement <strong>responsive</strong>. Cela signifie qu'il devait être aussi fluide et lisible sur un grand écran d'ordinateur que sur un téléphone portable, ce qui est aujourd'hui une exigence incontournable pour les clients de AR Conseil.</p>
+        <h2>Action 3 : Développement et Intégration WordPress</h2>
+        <p>Une fois le design validé, j'ai pris en charge la partie technique. J'ai transformé nos dessins en un site WordPress réel. Mon travail a été de m'assurer que le site soit <strong>responsive</strong>, c'est-à-dire qu'il s'adapte parfaitement aux smartphones. J'ai aussi configuré un formulaire de contact sécurisé pour que les demandes arrivent directement dans la boîte mail du conseiller.</p>
     </div>
 
     <div>
-        <h2>La réalité du terrain : Gérer les délais</h2>
-        <p>Travailler pour <strong>AR Conseil</strong> a été un vrai défi de gestion de projet. Le client était très occupé par ses nombreux rendez-vous professionnels, ce qui a parfois ralenti nos échanges et nous a fait stagner par moments. J'ai appris qu'en entreprise, le métier de développeur ne consiste pas seulement à coder, mais aussi à savoir relancer poliment, faire preuve de diplomatie et s'adapter au planning des autres pour ne pas prendre de retard sur la livraison finale du site.</p>
+        <h2>Action 4 : Déploiement et Mise en ligne</h2>
+        <p>C'était l'étape la plus stressante : envoyer le site sur le serveur de l'hébergeur <strong>IONOS</strong>. Comme c'était une première pour moi, j'ai dû me documenter et regarder beaucoup de tutoriels pour transférer la base de données sans rien casser. J'ai réussi à rendre le site public sans aucune erreur technique.</p>
     </div>
-
-    <div>
-        <h2>Technique : Formulaire et Mise en ligne</h2>
-        <p>La partie la plus délicate a été la mise en place du <strong>formulaire de contact</strong>. Il fallait que les demandes des prospects arrivent directement et proprement dans la boîte mail du conseiller de façon sécurisée. Enfin, j'ai dû apprendre à mettre le site en ligne sur l'hébergeur <strong>IONOS</strong>. Comme c'était une opération très technique impliquant le transfert de la base de données et des fichiers, j'ai regardé beaucoup de tutoriels pour réussir ce déploiement sans provoquer d'erreurs sur le serveur.</p>
-    </div>
-
-    
 
     <div class='liens_code'>
-        <p><strong>Voir le site en direct :</strong> <a href="https://arconseils-patrimoine.com" target="_blank">Visiter AR Conseil</a></p>
-        <p><strong>GitHub :</strong> <a href="https://github.com/K-dev-secure/Ar_conseil_wordpress" target="_blank">Code source</a></p>
+        <p><strong>Lien site :</strong> <a href="https://arconseils-patrimoine.com" target="_blank">Visiter le site AR Conseil</a></p>
+        <p><strong>code source :</strong> <a href="https://github.com/K-dev-secure/Ar_conseil_wordpress" target="_blank">Voir le GitHub</a></p>
     </div>
 
     <div>
-        <h2>Bilan : Un client et des étudiants satisfaits</h2>
-        <p>Le résultat final a été très positif : le client était ravi d'avoir enfin une vitrine sérieuse et moderne pour son activité à Lyon. Pour moi, ce projet est une grande réussite personnelle et professionnelle. J'ai appris à gérer un projet de A à Z, de la première discussion client jusqu'à la mise en ligne technique. Cette expérience m'a montré l'importance de la polyvalence entre le design, le code et la gestion humaine pour livrer un produit de qualité professionnelle.</p>
+        <h2>Résultats et Bilan</h2>
+        <p>Le client est aujourd'hui ravi de sa nouvelle vitrine. De mon côté, j'ai appris qu'être développeur, c'est aussi être diplomate : il a fallu relancer le client poliment et s'adapter à son planning pour livrer le projet à temps. J'ai acquis une autonomie complète sur WordPress, de la première maquette jusqu'à la mise en ligne finale.</p>
     </div>
 
     <script src="../script/script.js"></script>
