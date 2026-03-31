@@ -154,11 +154,7 @@
 }
 
 /* ── Stack Technique ── */
-.Stack_technique {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
+
 
 .Stack_technique h2 {
     position: relative;
