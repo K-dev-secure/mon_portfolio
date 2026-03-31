@@ -17,7 +17,10 @@ $contact = ($current == 'index.html' || $current == 'index.php')
 ?>
 <header>
   <nav class="nav">
-    <ul>
+    <button id="burgerMenuBtn" type="button" aria-label="Ouvrir le menu" aria-controls="mainMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="mainMenu">
       <li><a href="<?= $accueil ?>">Accueil</a></li>
       <li><a href="<?= $about ?>">À propos</a></li>
       <li><a href="<?= $projets ?>">Projets</a></li>
@@ -25,3 +28,4 @@ $contact = ($current == 'index.html' || $current == 'index.php')
     </ul>
   </nav>
 </header>
+<div id="menuOverlay"></div>

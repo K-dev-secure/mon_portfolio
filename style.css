@@ -108,37 +108,43 @@ main {
     border-radius: 5px;
 }
 
-/* En mobile, on l'affiche simplement */
+/* En mobile, on affiche le bouton burger */
 @media (max-width: 980px) {
     #burgerMenuBtn {
         display: flex;
     }
-    
-    /* Cache le menu normal */
-    .nav ul:not(.active) {
+
+    /* Cache le menu par défaut */
+    .nav ul {
         display: none;
     }
 
-    /* Affiche le menu vertical sur le côté */
-    .nav ul.active {
+    /* Quand body a la classe menu-open, on affiche le menu */
+    body.menu-open .nav ul {
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 0;
         right: 0;
         height: 100vh;
-        width: 180px; 
+        width: 180px;
         background-color: #000;
         padding-top: 80px;
         border-left: 1px solid #00d4ff;
     }
 }
-/* Quand le menu est ouvert, les barres deviennent blanches par exemple */
-#burgerMenuBtn.active span {
+
+/* Quand le menu est ouvert, les barres deviennent blanches */
+body.menu-open #burgerMenuBtn span {
     background-color: #ffffff;
 }
 
-/* ── Overlay (le fond noir transparent) ── */
+/* Body bloqué quand menu ouvert */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Overlay (le fond noir transparent) */
 #menuOverlay {
     position: fixed;
     top: 0;
@@ -149,7 +155,7 @@ main {
     display: none;
 }
 
-#menuOverlay.active {
+body.menu-open #menuOverlay {
     display: block;
 }
 .contenu-accueil h1 {
@@ -271,6 +277,6 @@ main {
 
 }
 
-    }
-}
+    
+
 

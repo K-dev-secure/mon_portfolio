@@ -45,110 +45,24 @@ function creerCarrousel() {
 
 function creerMenuBurger() {
 
-  // On récupère la barre de navigation et la liste des liens
-  var navigation = document.querySelector('.nav');
-  var listeLiens = navigation ? navigation.querySelector('ul') : null;
-
-  // Si la navigation n'existe pas, on arrête
-  if (!navigation || !listeLiens) {
-    return;
-  }
-
-  // On donne un id à la liste pour l'accessibilité
-  listeLiens.id = 'mainMenu';
-
-  // On crée le bouton burger (les 3 barres)
   var bouton = document.getElementById('burgerMenuBtn');
-  if (!bouton) {
-    bouton = document.createElement('button');
-    bouton.id = 'burgerMenuBtn';
-    bouton.type = 'button';
-    bouton.setAttribute('aria-label', 'Ouvrir le menu');
-    bouton.setAttribute('aria-controls', 'mainMenu');
-    bouton.setAttribute('aria-expanded', 'false');
-    bouton.innerHTML = '<span></span><span></span><span></span>';
-    navigation.insertBefore(bouton, listeLiens);
-  }
+  if (!bouton) return;
 
-  // On crée le fond sombre qui apparaît derrière le menu
-  var fondSombre = document.getElementById('menuOverlay');
-  if (!fondSombre) {
-    fondSombre = document.createElement('div');
-    fondSombre.id = 'menuOverlay';
-    document.body.appendChild(fondSombre);
-  }
-
-  // On récupère tous les liens du menu
-  var tousLesLiens = listeLiens.querySelectorAll('li a');
-
-
-  // Fonction pour ouvrir le menu
-  function ouvrirMenu() {
-    bouton.classList.add('active');
-    listeLiens.classList.add('active');
-    fondSombre.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    bouton.setAttribute('aria-expanded', 'true');
-  }
-
-  // Fonction pour fermer le menu
-  function fermerMenu() {
-    bouton.classList.remove('active');
-    listeLiens.classList.remove('active');
-    fondSombre.classList.remove('active');
-    document.body.style.overflow = '';
-    bouton.setAttribute('aria-expanded', 'false');
-  }
-
-  // Quand on clique sur le bouton burger : ouvrir ou fermer
-  bouton.addEventListener('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    if (bouton.classList.contains('active')) {
-      fermerMenu();
-    } else {
-      ouvrirMenu();
-    }
+  // Clic sur le bouton burger = ouvrir / fermer
+  bouton.addEventListener('click', function () {
+    document.body.classList.toggle('menu-open');
   });
 
-  // Quand on clique sur le fond sombre : fermer le menu
-  fondSombre.addEventListener('click', function () {
-    fermerMenu();
+  // Clic sur le fond sombre = fermer
+  document.getElementById('menuOverlay').addEventListener('click', function () {
+    document.body.classList.remove('menu-open');
   });
 
-  // Quand on clique sur un lien du menu
-  tousLesLiens.forEach(function (lien) {
-    lien.addEventListener('click', function (e) {
-      var destination = this.getAttribute('href');
-
-      // Si c'est un lien vers une section de la page (#)
-      if (destination && destination.startsWith('#')) {
-        e.preventDefault();
-        var cible = document.querySelector(destination);
-        fermerMenu();
-        if (cible) {
-          cible.scrollIntoView({ behavior: 'auto', block: 'start' });
-        }
-        return;
-      }
-
-      // Sinon on ferme juste le menu
-      fermerMenu();
+  // Clic sur un lien = fermer
+  document.querySelectorAll('#mainMenu a').forEach(function (lien) {
+    lien.addEventListener('click', function () {
+      document.body.classList.remove('menu-open');
     });
-  });
-
-  // Touche Échap = fermer le menu
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && bouton.classList.contains('active')) {
-      fermerMenu();
-    }
-  });
-
-  // Si on agrandit la fenêtre, on ferme le menu mobile
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 980 && bouton.classList.contains('active')) {
-      fermerMenu();
-    }
   });
 }
 
