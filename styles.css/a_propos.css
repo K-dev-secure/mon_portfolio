@@ -207,13 +207,17 @@
 .logo-tech .fa-css3-alt { color: #1572b6; }
 .logo-tech .fa-php { color: #777bb4; }
 .logo-tech .fa-react { color: #61dafb; }
-.logo-tech .fa-wordpress { color: #21759b; }
-.logo-tech .fa-figma { color: #f24e1e; }
-.logo-tech .fa-js { color: #f7df1e; }
-.logo-tech .fa-linux { color: #fcc624; }
-.logo-tech .fa-docker { color: #2496ed; }
-.logo-tech .fa-code { color: #3178c6; }
+.logo-tech .fa-linux { color: #557ebf; }
+.logo-tech .fa-shield-halved { color: #e74c3c; }
+.logo-tech .fa-bug { color: #3498db; }
+.logo-tech .fa-crosshairs { color: #9b59b6; }
+.logo-tech .fa-eye { color: #1abc9c; }
 .logo-tech .fa-network-wired { color: #1ba94c; }
+.logo-tech .fa-server { color: #e67e22; }
+.logo-tech .fa-docker { color: #2496ed; }
+.logo-tech .fa-terminal { color: #00bcf2; }
+.logo-tech .fa-lock { color: #f1c40f; }
+.logo-tech .fa-php { color: #777bb4; }
 
 .logo-tech:hover i {
     transform: scale(1.2);

@@ -13,17 +13,17 @@ function creerCarrousel() {
 
   // Liste de toutes les technologies à afficher
   var technologies = [
-    { icone: 'fab fa-html5',         nom: 'HTML' },
-    { icone: 'fab fa-css3-alt',      nom: 'CSS' },
-    { icone: 'fab fa-js',            nom: 'JavaScript' },
-    { icone: 'fab fa-php',           nom: 'PHP' },
-    { icone: 'fab fa-react',         nom: 'React' },
-    { icone: 'fab fa-wordpress',     nom: 'WordPress' },
-    { icone: 'fab fa-figma',         nom: 'Figma' },
-    { icone: 'fab fa-linux',         nom: 'Linux' },
+    { icone: 'fab fa-linux',         nom: 'Kali Linux' },
+    { icone: 'fas fa-shield-halved', nom: 'Pentest' },
+    { icone: 'fas fa-bug',           nom: 'Metasploit' },
+    { icone: 'fas fa-crosshairs',    nom: 'Nmap' },
+    { icone: 'fas fa-eye',           nom: 'Wireshark' },
+    { icone: 'fas fa-network-wired', nom: 'Packet Tracer' },
+    { icone: 'fas fa-server',        nom: 'DNS / DHCP' },
     { icone: 'fab fa-docker',        nom: 'Docker' },
-    { icone: 'fas fa-code',          nom: 'TypeScript' },
-    { icone: 'fas fa-network-wired', nom: 'Packet Tracer' }
+    { icone: 'fas fa-terminal',      nom: 'PowerShell' },
+    { icone: 'fas fa-lock',          nom: 'Cybersécurité' },
+    { icone: 'fab fa-php',           nom: 'PHP' }
   ];
 
   // On crée le HTML pour chaque technologie
