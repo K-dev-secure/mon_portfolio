@@ -63,6 +63,7 @@
     <div>
         <h2>Résultats et Bilan</h2>
         <p>Le client est aujourd'hui ravi de sa nouvelle vitrine. De mon côté, j'ai appris qu'être développeur, c'est aussi être diplomate : il a fallu relancer le client poliment et s'adapter à son planning pour livrer le projet à temps. J'ai acquis une autonomie complète sur WordPress, de la première maquette jusqu'à la mise en ligne finale.</p>
+        <p><em>Note : Le site contient encore des éléments à optimiser, comme la structure des liens dans la barre URL, l'uniformisation des boutons ou l'ajout de photos plus personnelles. C'est en cours de changement, ce n'est donc pas encore le résultat final officiel.</em></p>
     </div>
 
     <script src="../script/script.js"></script>
