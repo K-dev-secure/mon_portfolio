@@ -30,7 +30,7 @@
     </div>
 
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/gPKyAXl0hB4" title="Sensibilisation mots de passe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/8ZQ1_s5lQXQ" title="Sensibilisation mots de passe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div>
