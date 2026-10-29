@@ -98,6 +98,18 @@ strong {
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
 }
 
+/* --- ENCADRÉ STATUT DU SITE --- */
+.info_statut p {
+  border-left: 4px solid #ffb347;
+  background: rgba(255, 179, 71, 0.06);
+  border-radius: 6px;
+}
+
+.info_statut strong,
+.info_statut i {
+  color: #ffb347;
+}
+
 /* --- BOUTONS ET LIENS --- */
 .liens_code {
   max-width: 820px;

@@ -19,7 +19,11 @@
         <h1>Site vitrine</h1>
     </div>
 
-    <p>Pendant mon stage de fin de première année, j'ai travaillé pour <strong>MK ASSURANCE</strong>, un courtier en assurance. Ma mission était de prendre leur logo existant et de créer tout l'univers visuel qui va autour, puis de développer leur site internet : <a href="https://mkassurance.fr/" target="_blank">mkassurance.fr</a>.</p>
+    <p>Pendant mon stage de fin de première année, j'ai travaillé pour <strong>MK ASSURANCE</strong>, un courtier en assurance. Ma mission était de prendre leur logo existant et de créer tout l'univers visuel qui va autour, puis de développer leur site internet (mkassurance.fr).</p>
+
+    <div class="info_statut">
+        <p><strong><i class="fa-solid fa-circle-info"></i> Statut du site :</strong> j'ai conçu la maquette et codé entièrement ce site, qui a été mis en ligne et utilisé par l'entreprise. Depuis mai 2026, il n'est plus accessible : la dirigeante a choisi de le retirer d'Internet pour des raisons personnelles, sans lien avec le travail réalisé. Le code source reste disponible sur mon GitHub.</p>
+    </div>
 
     <div>
         <h2>L'image de l'entreprise : La charte graphique</h2>
@@ -46,7 +50,7 @@
     </div>
 
     <div class='liens_code'>
-        <p><strong>Voir le site en direct :</strong> <a href="https://mkassurance.fr/" target="_blank">www.mkassurance.fr</a></p>
+        <p><strong>Site en ligne :</strong> www.mkassurance.fr (hors ligne depuis mai 2026, à la demande de l'entreprise)</p>
         <p><strong>Voir mon code sur GitHub :</strong> <a href="https://github.com/koffiwilly/maquette-MK-Assurance/tree/main" target="_blank">Lien vers mon code source</a></p>
     </div>
 
